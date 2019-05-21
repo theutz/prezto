@@ -37,6 +37,7 @@ zstyle ':prezto:load' pmodule \
   'ssh' \
   'google-cloud-sdk' \
   'fzf-setup' \
+  'custom-aliases' \
   'homebrew' \
   'tmux' \
   'docker' \
