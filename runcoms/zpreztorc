@@ -19,7 +19,7 @@ zstyle ':prezto:*:*' color 'yes'
 # zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
 
 # Set the Zsh modules to load (man zshmodules).
-# zstyle ':prezto:load' zmodule 'attr' 'stat'
+zstyle ':prezto:load' zmodule 'attr' 'stat'
 
 # Set the Zsh functions to load (man zshcontrib).
 zstyle ':prezto:load' zfunction 'zargs' 'zmv'
@@ -35,9 +35,6 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'node' \
   'ssh' \
-  'google-cloud-sdk' \
-  'fzf-setup' \
-  'custom-aliases' \
   'homebrew' \
   'tmux' \
   'docker' \
@@ -48,7 +45,10 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'history-substring-search' \
   'syntax-highlighting' \
-  'prompt'
+  'prompt' \
+  'fzf-setup' \
+  'google-cloud-sdk' \
+  'custom-aliases'
 
 #
 # Autosuggestions
