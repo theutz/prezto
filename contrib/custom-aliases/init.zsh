@@ -9,3 +9,15 @@ alias vim="nvim"
 
 # git
 alias giaa="git add -A"
+
+# cat
+alias cat="bat"
+
+# top
+alias top="htop"
+
+# todo
+alias todo="vim ~/Dropbox/Orgzly/todo.org"
+
+# cal
+alias vimcal="vim +Calendar"
