@@ -126,7 +126,11 @@ zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+if [[ $TERM == 'eterm-color' ]]; then
+  zstyle ':prezto:module:prompt' theme 'steeef'
+else
+  zstyle ':prezto:module:prompt' theme 'sorin'
+fi
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -215,11 +219,13 @@ zstyle ':prezto:module:terminal:multiplexer-title' format '%s'
 # Tmux
 #
 
-# Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+if [[ $TERM != 'eterm-color' && $TERM != 'dumb' ]]; then
+  # Auto start a session when Zsh is launched in a local terminal.
+  zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
-# Auto start a session when Zsh is launched in a SSH connection.
-zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+  # Auto start a session when Zsh is launched in a SSH connection.
+  zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+fi
 
 # Integrate with iTerm2.
 # zstyle ':prezto:module:tmux:iterm' integrate 'yes'
