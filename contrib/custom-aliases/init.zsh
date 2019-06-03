@@ -17,7 +17,7 @@ alias cat="bat"
 alias top="htop"
 
 # todo
-alias todo="vim ~/Dropbox/Orgzly/todo.org"
+alias todo="vim ~/Dropbox/org/gtd.org"
 
 # cal
 alias vimcal="vim +Calendar"
