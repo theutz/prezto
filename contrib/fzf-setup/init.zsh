@@ -1,1 +1,1 @@
-export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git --nocolor -g ""'
