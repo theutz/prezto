@@ -48,7 +48,8 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'fzf-setup' \
   'google-cloud-sdk' \
-  'custom-aliases'
+  'custom-aliases' \
+  'unity-vault'
 
 #
 # Autosuggestions
