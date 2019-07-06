@@ -1,6 +1,3 @@
-# fasd
-alias zz="cd \`fasd -i\`"
-
 # lsd
 alias ls="lsd"
 
