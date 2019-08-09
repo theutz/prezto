@@ -21,3 +21,6 @@ alias brewbc="brew bundle cleanup"
 alias brewbC="brew bundle cleanup --force"
 alias brewbi="brew bundle install --no-upgrade"
 alias brewbu="brew bundle install"
+
+# misc
+alias todaymd="nvim `date +%Y-%m-%d`.md"
