@@ -49,6 +49,7 @@ zstyle ':prezto:load' pmodule \
   'fzf-setup' \
   'powerline-setup' \
   'google-cloud-sdk' \
+  'go' \
   'custom-aliases' \
   'unity-vault'
 
