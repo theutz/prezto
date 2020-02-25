@@ -31,3 +31,6 @@
 [submodule "modules/prompt/external/powerlevel10k"]
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "contrib/forgit-setup/forgit"]
+	path = contrib/forgit/external
+	url = https://github.com/wfxr/forgit
