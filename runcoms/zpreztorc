@@ -50,6 +50,7 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'prompt' \
   'fzf-setup' \
+  'n-setup' \
   'powerline-setup' \
   'google-cloud-sdk' \
   'go' \
