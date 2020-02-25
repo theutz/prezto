@@ -41,6 +41,7 @@ zstyle ':prezto:load' pmodule \
   'tmux' \
   'docker' \
   'directory' \
+  'gpg' \
   'spectrum' \
   'utility' \
   'completion' \
