@@ -49,6 +49,7 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'history-substring-search' \
   'syntax-highlighting' \
+  'chemacs' \
   'prompt' \
   'fzf-setup' \
   'forgit' \
