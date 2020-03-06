@@ -1,5 +1,5 @@
-# lsd
-alias ls="lsd"
+# broot
+alias ls="br -dp"
 
 # cat
 alias cat="bat"
@@ -13,9 +13,11 @@ alias brewbC="brew bundle cleanup --force"
 alias brewbi="brew bundle install --no-upgrade"
 alias brewbu="brew bundle install"
 
-# git
-alias giaa="git add -A"
-
+# brew services
 alias ess="brew services start emacs-plus"
 alias esx="brew services stop emacs-plus"
 alias esS="brew services restart emacs-plus"
+
+# git
+alias giaa="git add -A"
+

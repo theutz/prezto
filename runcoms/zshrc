@@ -12,4 +12,10 @@ fi
 
 # Customize to your needs...
 
+# Setup FZF
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Setup broot
+
+source "$HOME"/Library/Preferences/org.dystroy.broot/launcher/bash/br
