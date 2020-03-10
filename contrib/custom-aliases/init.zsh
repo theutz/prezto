@@ -1,6 +1,5 @@
-# broot
-alias ls="br -dp"
-alias la="br -dph"
+# lsd
+alias ls="lsd"
 
 # cat
 alias cat="bat"
