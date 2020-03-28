@@ -21,3 +21,6 @@ alias esS="brew services restart emacs-plus"
 # git
 alias giaa="git add -A"
 alias gpm="git fetch origin master:master"
+
+# buku
+alias buku="EDITOR='emacsclient -c' buku"
