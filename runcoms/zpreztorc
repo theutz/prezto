@@ -52,7 +52,6 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'fzf-setup' \
   'forgit' \
-  'n-setup' \
   'powerline-setup' \
   'google-cloud-sdk' \
   'go' \
