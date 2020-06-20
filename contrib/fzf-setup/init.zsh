@@ -10,3 +10,9 @@ fi
 export FZF_DEFAULT_OPTS="--ansi"
 
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+if [ -f ~/.fzf.zsh ]; then
+  source ~/.fzf.zsh
+else
+  $(brew --prefix)/opt/fzf/install
+fi
