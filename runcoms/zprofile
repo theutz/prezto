@@ -17,8 +17,8 @@ fi
 # Editors
 #
 
-export EDITOR='nvim'
-export VISUAL="code"
+export EDITOR="emacsclient -a '' -c -nw"
+export VISUAL="emacsclient -a '' -c"
 export PAGER='less'
 
 #
@@ -66,4 +66,8 @@ fi
 #
 # TERM
 #
-export TERM="xterm-256color"
+if [[ $TERM =~ '^eterm' ]]; then
+    export PROMPT_EOL_MARK=''
+else
+    export TERM="xterm-256color"
+fi
