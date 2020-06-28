@@ -40,4 +40,5 @@ alias esS="brew services restart emacs-plus@26"
 
 # git
 alias giaa="git add -A"
+alias giai="git add --intent-to-add"
 alias gpm="git fetch origin master:master"
