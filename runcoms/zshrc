@@ -21,6 +21,10 @@ alias ls="lsd"
 # cat
 alias cat="bat"
 
+# zsh
+alias ec="e $HOME/.zshrc"
+alias sc="source $HOME/.zshrc"
+
 # brew bundle
 alias brewb="brew bundle"
 alias brewbd="brew bundle dump"
@@ -42,3 +46,6 @@ alias esS="brew services restart emacs-plus@26"
 alias giaa="git add -A"
 alias giai="git add --intent-to-add"
 alias gpm="git fetch origin master:master"
+
+# suffix aliases
+alias -s {ts,tsx,js,jsx,json,html,css,md}=$VISUAL
