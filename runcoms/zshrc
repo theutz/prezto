@@ -31,6 +31,9 @@ alias brewbi="brew bundle install --no-upgrade"
 alias brewbu="brew bundle install"
 
 # brew services
+alias brewss="brew services start"
+alias brewsS="brew services restart"
+alias brewsx="brew services stop"
 alias ess="brew services start emacs-plus@26"
 alias esx="brew services stop emacs-plus@26"
 alias esS="brew services restart emacs-plus@26"
