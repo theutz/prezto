@@ -25,6 +25,12 @@ alias cat="bat"
 alias ec="e $HOME/.zshrc"
 alias sc="source $HOME/.zshrc"
 
+# yabai
+alias eyabai="e $HOME/.config/yabai/yabairc && brew services restart yabai"
+
+# skhd
+alias eskhd="e $HOME/.config/skhd/skhdrc && skhd --reload"
+
 # brew bundle
 alias brewb="brew bundle"
 alias brewbd="brew bundle dump"
