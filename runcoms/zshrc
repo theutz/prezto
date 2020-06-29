@@ -21,6 +21,10 @@ alias ls="lsd"
 # cat
 alias cat="bat"
 
+# zsh
+alias ec="e $HOME/.zshrc"
+alias sc="source $HOME/.zshrc"
+
 # brew bundle
 alias brewb="brew bundle"
 alias brewbd="brew bundle dump"
@@ -31,13 +35,20 @@ alias brewbi="brew bundle install --no-upgrade"
 alias brewbu="brew bundle install"
 
 # brew services
-alias ess="brew services start emacs-plus"
-alias esx="brew services stop emacs-plus"
-alias esS="brew services restart emacs-plus"
+alias brewss="brew services start"
+alias brewsS="brew services restart"
+alias brewsx="brew services stop"
+alias ess="brew services start emacs-plus@26"
+alias esx="brew services stop emacs-plus@26"
+alias esS="brew services restart emacs-plus@26"
 
 # git
 alias giaa="git add -A"
+alias giai="git add --intent-to-add"
 alias gpm="git fetch origin master:master"
+
+# suffix aliases
+alias -s {ts,tsx,js,jsx,json,html,css,md}=$VISUAL
 
 # JFrog for Unity
 if [[ -s "${HOME}/.profile" ]]; then
