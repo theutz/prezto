@@ -38,3 +38,8 @@ alias esS="brew services restart emacs-plus"
 # git
 alias giaa="git add -A"
 alias gpm="git fetch origin master:master"
+
+# JFrog for Unity
+if [[ -s "${HOME}/.profile" ]]; then
+  source "${HOME}/.profile"
+fi
