@@ -44,6 +44,10 @@ alias brewbu="brew bundle install"
 alias brewss="brew services start"
 alias brewsS="brew services restart"
 alias brewsx="brew services stop"
+alias brewsl="brew services list"
+
+# emacs
+alias efed="e $HOME/.emacs.d/config.org"
 alias ess="brew services start emacs-plus@26"
 alias esx="brew services stop emacs-plus@26"
 alias esS="brew services restart emacs-plus@26"
