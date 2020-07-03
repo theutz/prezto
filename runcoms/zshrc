@@ -65,3 +65,14 @@ alias -s {ts,tsx,js,jsx,json,html,css,md}=$VISUAL
 if [[ -s "${HOME}/.profile" ]]; then
   source "${HOME}/.profile"
 fi
+
+# vterm setup for emacs
+vterm_printf() {
+    if [ -n "$TMUX" ]; then
+	printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+	printf "\eP\e]%s\007\e\\" "$1"
+    else
+	printf "\e]%s\e\\" "$1"
+    fi
+}
