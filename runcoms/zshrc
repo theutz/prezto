@@ -47,16 +47,21 @@ alias brewsx="brew services stop"
 alias brewsl="brew services list"
 
 # emacs
+EMACS_VERSION=27
 alias E="e -n"
 alias efed="e $HOME/.emacs.d/config.org"
-alias ess="brew services start emacs-plus@26"
-alias esx="brew services stop emacs-plus@26"
-alias esS="brew services restart emacs-plus@26"
+alias ess="brew services start emacs-plus@${EMACS_VERSION}"
+alias esx="brew services stop emacs-plus@${EMACS_VERSION}"
+alias esS="brew services restart emacs-plus@${EMACS_VERSION}"
 
 # git
 alias giaa="git add -A"
 alias giai="git add --intent-to-add"
 alias gpm="git fetch origin master:master"
+
+# ps
+alias psgrep="ps aux | grep -v grep | grep"
+alias psg="psgrep"
 
 # suffix aliases
 alias -s {ts,tsx,js,jsx,json,html,css,md}=$VISUAL
