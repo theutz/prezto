@@ -91,3 +91,5 @@ vterm_printf() {
 	printf "\e]%s\e\\" "$1"
     fi
 }
+
+kitty + complete setup zsh | source /dev/stdin
