@@ -11,7 +11,7 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 #
-# Yabai
+# SKHD
 #
 
-source $HOME/.config/yabai/helpers.zsh
+source "$HOME/.config/skhd/bindings.zsh"
