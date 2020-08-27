@@ -15,3 +15,11 @@ fi
 #
 
 source "$HOME/.config/skhd/bindings.zsh"
+
+#
+# Chrome Profiles
+#
+
+if [[ -a "$HOME/.config/chrome/profiles.zsh" ]]; then
+   source "$HOME/.config/chrome/profiles.zsh"
+fi
