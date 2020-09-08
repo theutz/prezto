@@ -11,12 +11,6 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
 fi
 
 #
-# SKHD
-#
-
-source "$HOME/.config/skhd/bindings.zsh"
-
-#
 # Chrome Profiles
 #
 
