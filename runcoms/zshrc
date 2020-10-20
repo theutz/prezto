@@ -69,4 +69,8 @@ vterm_printf() {
     fi
 }
 
+# kitty
 kitty + complete setup zsh | source /dev/stdin
+
+# nodenv
+eval "$(nodenv init -)"
