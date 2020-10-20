@@ -74,3 +74,6 @@ kitty + complete setup zsh | source /dev/stdin
 
 # nodenv
 eval "$(nodenv init -)"
+
+# rbenv
+eval "$(rbenv init -)"
