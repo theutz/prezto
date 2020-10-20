@@ -21,16 +21,6 @@ alias ls="lsd"
 # cat
 alias cat="bat"
 
-# zsh
-alias ec="e $HOME/.zshrc"
-alias sc="source $HOME/.zshrc"
-
-# yabai
-alias eyabai="e $HOME/.config/yabai/yabairc && brew services restart yabai"
-
-# skhd
-alias eskhd="e $HOME/.config/skhd/skhdrc && skhd --reload"
-
 # brew bundle
 alias brewb="brew bundle"
 alias brewbd="brew bundle dump"
@@ -45,14 +35,6 @@ alias brewss="brew services start"
 alias brewsS="brew services restart"
 alias brewsx="brew services stop"
 alias brewsl="brew services list"
-
-# emacs
-EMACS_VERSION=27
-alias E="e -n"
-alias efed="e $HOME/.emacs.d/config.org"
-alias ess="brew services start emacs-plus@${EMACS_VERSION}"
-alias esx="brew services stop emacs-plus@${EMACS_VERSION}"
-alias esS="brew services restart emacs-plus@${EMACS_VERSION}"
 
 # git
 alias giaa="git add -A"
@@ -75,11 +57,6 @@ alias sd='fasd -sid'
 alias sf='fasd -sif'
 alias z='fasd_cd -d'
 alias zz='fasd_cd -d -i'
-
-# JFrog for Unity
-if [[ -s "${HOME}/.profile" ]]; then
-  source "${HOME}/.profile"
-fi
 
 # vterm setup for emacs
 vterm_printf() {
