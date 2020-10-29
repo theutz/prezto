@@ -77,3 +77,6 @@ eval "$(nodenv init -)"
 
 # rbenv
 eval "$(rbenv init -)"
+
+# iterm shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
