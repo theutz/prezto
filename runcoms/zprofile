@@ -17,7 +17,7 @@ fi
 # Editors
 #
 
-export EDITOR="emacsclient -c -a ''"
+export EDITOR="code --wait --new-window"
 export VISUAL="$EDITOR"
 export PAGER='less'
 
