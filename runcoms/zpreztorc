@@ -49,13 +49,12 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'history-substring-search' \
   'syntax-highlighting' \
-  'prompt' \
   'fzf-setup' \
   'forgit' \
   'powerline-setup' \
   'google-cloud-sdk' \
   'go' \
-  'unity-vault'
+  'starship-setup'
 
 #
 # Autosuggestions
