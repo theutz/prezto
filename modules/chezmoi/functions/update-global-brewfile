@@ -1,0 +1,6 @@
+if command brew bundle dump --global --desc --force --cleanup > /dev/null; then
+  chezmoi add "$(chezmoi target-path)/.Brewfile" > /dev/null
+  return $?
+else
+  return 1
+fi

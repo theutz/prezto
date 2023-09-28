@@ -50,6 +50,7 @@ zstyle ':prezto:load' pmodule \
 	'python' \
 	'completion' \
   'zoxide' \
+  'chezmoi' \
 	'syntax-highlighting' \
 	'history-substring-search' \
 	'autosuggestions' \
@@ -69,6 +70,15 @@ zstyle ':prezto:module:autosuggestions:color' found 'fg=8,standout'
 # Set the entries to ignore in static '/etc/hosts' for host completion.
 zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
 	'0.0.0.0' '127.0.0.1'
+
+#
+# Chezmoi
+#
+
+# Override Homebrew's `brew` command to keep the global
+# Brewfile up-to-date when installing/uninstalling
+# formulae
+zstyle ':prezto:module:chezmoi:brew' override 'yes'
 
 #
 # Editor

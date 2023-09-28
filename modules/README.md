@@ -14,6 +14,10 @@ Provides functions to list and extract archives.
 
 Integrates zsh-autosuggestions into Prezto.
 
+## Chezmoi
+
+Integrates [chezmoi](https://chezmoi.io) into zsh.
+
 ## Command-Not-Found
 
 Loads the command-not-found tool on macOS or Debian-based distributions.

@@ -1,0 +1,10 @@
+case "$1" in
+  install|uninstall)
+    command brew "$@" && update-global-brewfile
+    ;;
+  *)
+    command brew "$@"
+    ;;
+esac
+
+return $?
