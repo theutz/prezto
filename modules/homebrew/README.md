@@ -46,5 +46,6 @@ _The authors of this module should be contacted via the [issue tracker][1]._
 
 - [Sorin Ionescu](https://github.com/sorin-ionescu)
 - [Griffin Yourick](https://github.com/tough-griff)
+- [Michael Utz](https://github.com/theutz)
 
 [1]: https://github.com/sorin-ionescu/prezto/issues
