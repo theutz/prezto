@@ -1,0 +1,9 @@
+emulate -L zsh
+local line
+if ! read -r line <&$1; then
+    zle -F $1
+    exec {1}<&-
+    return 1
+fi
+eval $line
+zle -R
