@@ -84,6 +84,14 @@ Integrates zsh-history-substring-search into Prezto.
 
 Defines Homebrew aliases.
 
+## LF
+
+Integate the lf file manager into zsh.
+
+## Keychain
+
+Integrates Gentoo's keychain package into zsh.
+
 ## MacPorts
 
 Defines MacPorts aliases and adds MacPorts directories to path variables.
