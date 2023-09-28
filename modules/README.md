@@ -172,3 +172,7 @@ This module provides a wrapper around the wakeonlan tool.
 ## Yum
 
 Defines yum aliases.
+
+## Zoxide
+
+Setup and configure zoxide

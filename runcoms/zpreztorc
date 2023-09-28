@@ -49,6 +49,7 @@ zstyle ':prezto:load' pmodule \
 	'rsync' \
 	'python' \
 	'completion' \
+  'zoxide' \
 	'syntax-highlighting' \
 	'history-substring-search' \
 	'autosuggestions' \
