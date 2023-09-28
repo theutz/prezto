@@ -36,9 +36,20 @@ zstyle ':prezto:load' pmodule \
 	'history' \
 	'directory' \
 	'spectrum' \
+	'gnu-utility' \
 	'utility' \
+	'homebrew' \
+	'osx' \
+	'command-not-found' \
+	'tmux' \
+	'git' \
+	'archive' \
+	'rsync' \
+	'python' \
 	'completion' \
+	'syntax-highlighting' \
 	'history-substring-search' \
+	'autosuggestions' \
 	'prompt'
 
 #
