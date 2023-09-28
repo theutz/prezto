@@ -31,17 +31,21 @@ fi
 # Homebrew
 if ! zstyle -t ':prezto:module:homebrew:alias' skip; then
   alias brewc='brew cleanup'
+  alias brewh='brew home'
   alias brewi='brew install'
   alias brewL='brew leaves'
   alias brewl='brew list'
+  alias brewn='brew info'
   alias brewo='brew outdated'
   alias brews='brew search'
   alias brewu='brew upgrade'
   alias brewx='brew uninstall'
 
   # Homebrew Cask
+  alias caskh='brew home --cask'
   alias caski='brew install --cask'
   alias caskl='brew list --cask'
+  alias caskn='brew info --cask'
   alias casko='brew outdated --cask'
   alias casks='brew search --cask'
   alias casku='brew upgrade --cask'
