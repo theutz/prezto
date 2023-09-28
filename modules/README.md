@@ -55,6 +55,10 @@ Sets general shell options and defines environment variables.
 
 Maintains a frequently used file and directory list for fast access.
 
+## FZF
+
+Terminal-based generic fuzzy finder.
+
 ## Git
 
 Enhances the Git distributed version control system by providing aliases,

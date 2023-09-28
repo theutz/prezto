@@ -50,6 +50,7 @@ zstyle ':prezto:load' pmodule \
 	'python' \
 	'completion' \
   'zoxide' \
+  'fzf' \
   'chezmoi' \
 	'syntax-highlighting' \
 	'history-substring-search' \
@@ -95,6 +96,37 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
 #zstyle ':prezto:module:editor' ps-context 'yes'
+
+#
+# FZF
+#
+
+# Set the default command for fzf
+zstyle ':prezto:module:fzf:default' command \
+  'fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+
+# Set the default options for fzf
+zstyle ':prezto:module:fzf:default' options \
+  '--height' '40%' \
+  '--layout=reverse' \
+  '--border'
+
+# Set the command for CTRL-T
+# If not set, default will be used.
+# zstyle ':prezto:module:fzf:ctrl-t' command \
+#   'fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+
+# Set the options for CTRL-T
+zstyle ':prezto:module:fzf:ctrl-t' options \
+  '--preview' "'bat -n --color=always {}'"
+
+# Setup fzf tmux integration
+zstyle ':prezto:module:fzf:tmux' options \
+  '-p 80%,80%'
+
+# Setup ALT-C options
+zstyle ':prezto:module:fzf:alt-c' options \
+  '--preview' "'tree -C {}'"
 
 #
 # Git
