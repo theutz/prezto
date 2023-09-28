@@ -57,15 +57,15 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the query found color.
-# zstyle ':prezto:module:autosuggestions:color' found ''
+zstyle ':prezto:module:autosuggestions:color' found 'fg=8,standout'
 
 #
 # Completions
 #
 
 # Set the entries to ignore in static '/etc/hosts' for host completion.
-# zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
-#   '0.0.0.0' '127.0.0.1'
+zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
+	'0.0.0.0' '127.0.0.1'
 
 #
 # Editor
@@ -207,23 +207,25 @@ zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
-# zstyle ':prezto:module:syntax-highlighting' highlighters \
-#   'main' \
-#   'brackets' \
-#   'pattern' \
-#   'line' \
-#   'cursor' \
-#   'root'
-#
+zstyle ':prezto:module:syntax-highlighting' highlighters \
+	'main' \
+	'brackets' \
+	'pattern' \
+	'line' \
+	'cursor' \
+	'root'
+
 # Set syntax highlighting styles.
-# zstyle ':prezto:module:syntax-highlighting' styles \
-#   'builtin' 'bg=blue' \
-#   'command' 'bg=blue' \
-#   'function' 'bg=blue'
-#
+zstyle ':prezto:module:syntax-highlighting' styles \
+	'builtin' 'fg=blue,bold' \
+	'command' 'fg=green,bold' \
+	'alias' 'fg=yellow,bold' \
+	'reserved-word' 'fg=magenta,bold' \
+	'function' 'fg=cyan,bold'
+
 # Set syntax pattern styles.
-# zstyle ':prezto:module:syntax-highlighting' pattern \
-#   'rm*-rf*' 'fg=white,bold,bg=red'
+zstyle ':prezto:module:syntax-highlighting' pattern \
+	'rm*-rf*' 'fg=white,bold,bg=red'
 
 #
 # Terminal
