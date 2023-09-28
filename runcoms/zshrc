@@ -19,5 +19,15 @@ fi
 
 # Customize to your needs...
 
+#
+# Aliases
+#
+
+[[ ! -f ~/.zaliases ]] || source ~/.zaliases
+
+#
+# p10k prompt
+#
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
