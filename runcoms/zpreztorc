@@ -41,6 +41,7 @@ zstyle ':prezto:load' pmodule \
 	'homebrew' \
   'keychain' \
 	'osx' \
+  'lf' \
 	'command-not-found' \
 	'tmux' \
 	'git' \
@@ -135,6 +136,13 @@ zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
 
 # Enable prefixed search.
 # zstyle ':prezto:module:history-substring-search' prefixed 'yes'
+
+#
+# lf
+#
+
+# Enable cd-ing to the CWD when exiting lf
+zstyle ':prezto:module:lf' cd 'yes'
 
 #
 # Keychain
