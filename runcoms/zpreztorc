@@ -39,6 +39,7 @@ zstyle ':prezto:load' pmodule \
 	'gnu-utility' \
 	'utility' \
 	'homebrew' \
+  'keychain' \
 	'osx' \
 	'command-not-found' \
 	'tmux' \
@@ -134,6 +135,25 @@ zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
 
 # Enable prefixed search.
 # zstyle ':prezto:module:history-substring-search' prefixed 'yes'
+
+#
+# Keychain
+#
+
+# Use 'yes' to silence keychain on prompt initialization
+zstyle ':prezto:module:keychain' quiet 'yes'
+
+# Add the keys that should be managed by keychain
+zstyle ':prezto:module:keychain' keys \
+  "id_ed25519" \
+  "6AEFB22E" \
+  "FD235DFD" \
+  "48B95546"
+
+# Add the agents that keychain should manage
+zstyle ':prezto:module:keychain' agents \
+  'ssh' \
+  'gpg'
 
 #
 # macOS
