@@ -8,6 +8,11 @@ alias gce='git commit --amend'
 # kitty
 alias themes='kitty -1 sh -c "kitty +kitten themes"'
 
+# ai
+alias chatgpt='sgpt'
+alias hal='interpreter'
+alias to-ai='mods chat'
+
 #
 # vim
 #
