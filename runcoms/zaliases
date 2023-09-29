@@ -13,6 +13,9 @@ alias ask='sgpt'
 alias hal='interpreter'
 alias to-ai='mods chat'
 
+# tmuxp
+alias txa='tmuxp ls | fzf | xargs tmuxp load -d'
+
 #
 # vim
 #
