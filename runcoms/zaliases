@@ -9,3 +9,7 @@ for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
 done
 alias "${ZPREZTODIR:t}"='(cd "$ZPREZTODIR" && $EDITOR .) && exec zsh'
 alias .zsecrets='$EDITOR "$(chezmoi target-path)"/.zsecrets'
+#
+# global aliases
+#
+alias -g P="| pager"
