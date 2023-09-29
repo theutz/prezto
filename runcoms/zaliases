@@ -5,6 +5,11 @@ alias lg="lazygit"
 alias themes='kitty -1 sh -c "kitty +kitten themes"'
 
 #
+# vim
+#
+alias nvime='(cd $XDG_CONFIG_HOME/nvim && nvim)'
+
+#
 # zsh
 #
 alias ez="exec zsh"
