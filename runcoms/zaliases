@@ -1,0 +1,11 @@
+#
+# zsh
+#
+alias ez="exec zsh"
+alias recomp='rm -rf ~/.zcompdump && compinit'
+alias aliases="$EDITOR ${0:a} && exec zsh"
+for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
+  alias ".${rcfile:t}"="(cd $ZPREZOTDIR && $EDITOR $rcfile) && exec zsh"
+done
+alias "${ZPREZTODIR:t}"='(cd "$ZPREZTODIR" && $EDITOR .) && exec zsh'
+alias .zsecrets='$EDITOR "$(chezmoi target-path)"/.zsecrets'
