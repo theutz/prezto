@@ -24,6 +24,13 @@ for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
 done
 alias "${ZPREZTODIR:t}"='(cd "$ZPREZTODIR" && $EDITOR .) && exec zsh'
 alias .zsecrets='$EDITOR "$(chezmoi target-path)"/.zsecrets'
+
+#
+# suffix aliases
+#
+alias -s {md,markdown,mkdwn}="glow -p"
+alias -s {yml,yaml,json,js,css,scss,ts,tsx,jsx,toml,conf}="$EDITOR"
+
 #
 # global aliases
 #
