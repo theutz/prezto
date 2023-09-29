@@ -76,10 +76,13 @@ zstyle ':prezto:module:completion:*:hosts' etc-host-ignores \
 # Chezmoi
 #
 
-# Override Homebrew's `brew` command to keep the global
-# Brewfile up-to-date when installing/uninstalling
-# formulae
+# Override Homebrew's `brew` command to keep the global Brewfile up-to-date
+# when installing/uninstalling formulae
 zstyle ':prezto:module:chezmoi:brew' override 'yes'
+
+# Secret files to source on startup relative with paths either absolute or
+# relative to chezmoi target.
+zstyle ':prezto:module:chezmoi:secrets' files '.zsecrets' '~/.zsecrets'
 
 #
 # Editor
