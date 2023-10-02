@@ -46,6 +46,7 @@ zstyle ':prezto:load' pmodule \
 	'command-not-found' \
 	'tmux' \
 	'git' \
+  'lazygit' \
 	'archive' \
 	'rsync' \
 	'python' \
