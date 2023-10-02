@@ -13,8 +13,14 @@ alias ask='sgpt'
 alias hal='interpreter'
 alias to-ai='mods chat'
 
+# tmux
+alias tmuxcd='cd $XDG_CONFIG_HOME/tmux'
+alias tmuxe='(tmuxcd && e tmux.conf)'
+
 # tmuxp
 alias txa='tmuxp ls | fzf | xargs tmuxp load -d'
+alias tmuxpcd='cd $XDG_CONFIG_HOME/tmuxp'
+alias tmuxpe='(tmuxpcd && fzf | xargs e)'
 
 #
 # vim
