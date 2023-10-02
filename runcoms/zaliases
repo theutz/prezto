@@ -1,10 +1,6 @@
 # lazygit
 alias lg="lazygit"
 
-# git
-alias giaa='git add --all'
-alias gce='git commit --amend'
-
 # kitty
 alias themes='kitty -1 sh -c "kitty +kitten themes"'
 

@@ -52,6 +52,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   alias gc='git commit --verbose'
   alias gcS='git commit --verbose --gpg-sign'
   alias gca='git commit --verbose --all'
+  alias gce='git commit --amend'
   alias gcaS='git commit --verbose --all --gpg-sign'
   alias gcm='git commit --message'
   alias gcmS='git commit --message --gpg-sign'
@@ -174,6 +175,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip; then
   # Index (i)
   alias gia='git add'
   alias giA='git add --patch'
+  alias giaa='git add --all'
   alias giu='git add --update'
   alias gid='git diff --no-ext-diff --cached'
   alias giD='git diff --no-ext-diff --cached --word-diff'
