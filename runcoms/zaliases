@@ -35,10 +35,11 @@ alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="e ${0:a} && exec zsh"
 alias zshcd='zsh -c "cd ${ZPREZTODIR} && zsh" && exec zsh'
+alias zshe='(cd "$ZPREZTODIR" && $EDITOR)'
 for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
-  alias ".${rcfile:t}"="(cd $ZPREZTODIR && e $rcfile) && exec zsh"
+  alias ".${rcfile:t}"="(cd \"\$ZPREZTODIR\" && e $rcfile) && exec zsh"
 done
-alias "${ZPREZTODIR:t}"='(zshcd && e .) && exec zsh'
+alias "${ZPREZTODIR:t}"='(cd "$ZPREZTODIR" && e .) && exec zsh'
 alias .zsecrets='e "$(chezmoi target-path)"/.zsecrets'
 
 #
