@@ -14,10 +14,6 @@ Provides functions to list and extract archives.
 
 Integrates zsh-autosuggestions into Prezto.
 
-## Chezmoi
-
-Integrates [chezmoi](https://chezmoi.io) into zsh.
-
 ## Command-Not-Found
 
 Loads the command-not-found tool on macOS or Debian-based distributions.
@@ -55,10 +51,6 @@ Sets general shell options and defines environment variables.
 
 Maintains a frequently used file and directory list for fast access.
 
-## FZF
-
-Terminal-based generic fuzzy finder.
-
 ## Git
 
 Enhances the Git distributed version control system by providing aliases,
@@ -91,14 +83,6 @@ Integrates zsh-history-substring-search into Prezto.
 ## Homebrew
 
 Defines Homebrew aliases.
-
-## LF
-
-Integate the lf file manager into zsh.
-
-## Keychain
-
-Integrates Gentoo's keychain package into zsh.
 
 ## MacPorts
 
@@ -180,7 +164,3 @@ This module provides a wrapper around the wakeonlan tool.
 ## Yum
 
 Defines yum aliases.
-
-## Zoxide
-
-Setup and configure zoxide
