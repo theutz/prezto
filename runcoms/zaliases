@@ -14,19 +14,19 @@ alias hal='interpreter'
 alias to-ai='mods chat'
 
 # tmux
-alias tmuxcd='cd $XDG_CONFIG_HOME/tmux'
-alias tmuxe='(tmuxcd && e tmux.conf)'
+alias tmuxcd='zsh -c "cd $XDG_CONFIG_HOME/tmux && zsh"'
+alias tmuxe='(cd $XDG_CONFIG_HOME/tmux && e tmux.conf)'
 
 # tmuxp
 alias txa='tmuxp ls | fzf | xargs tmuxp load -d'
-alias tmuxpcd='cd $XDG_CONFIG_HOME/tmuxp'
-alias tmuxpe='(tmuxpcd && fzf | xargs e)'
+alias tmuxpcd='zsh -c "cd $XDG_CONFIG_HOME/tmuxp && zsh"'
+alias tmuxpe='(cd $XDG_CONFIG_HOME/tmuxp && fzf | xargs $EDITOR)'
 
 #
 # vim
 #
 alias nvime='(nvimcd && nvim)'
-alias nvimcd='cd $XDG_CONFIG_HOME/nvim'
+alias nvimcd='zsh -c "cd $XDG_CONFIG_HOME/nvim && zsh"'
 
 #
 # zsh
@@ -34,9 +34,9 @@ alias nvimcd='cd $XDG_CONFIG_HOME/nvim'
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="e ${0:a} && exec zsh"
-alias zshcd='cd ${ZPREZTODIR}'
+alias zshcd='zsh -c "cd ${ZPREZTODIR} && zsh" && exec zsh'
 for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
-  alias ".${rcfile:t}"="(zshcd && e $rcfile) && exec zsh"
+  alias ".${rcfile:t}"="(cd $ZPREZTODIR && e $rcfile) && exec zsh"
 done
 alias "${ZPREZTODIR:t}"='(zshcd && e .) && exec zsh'
 alias .zsecrets='e "$(chezmoi target-path)"/.zsecrets'
