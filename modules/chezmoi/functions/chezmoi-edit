@@ -1,0 +1,11 @@
+# function chezmoi-edit {
+
+if [[ -z "$@" ]]; then
+  (cd "$(chezmoi source-path)" && $EDITOR .)
+else
+  chezmoi edit $@
+fi
+
+return $?
+
+# }

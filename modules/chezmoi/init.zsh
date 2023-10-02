@@ -12,3 +12,21 @@ for secret_file in "${(k)secret_files[@]}"; do
   fi
 done
 unset secret_file{,s}
+
+alias cm='chezmoi'
+alias cma='chezmoi add'
+alias cmA='chezmoi apply'
+alias cmcd='chezmoi cd'
+alias cmd='chezmoi diff'
+alias cme='chezmoi-edit'
+alias cmg='chezmoi git'
+alias cmgws='chezmoi git -- status --short'
+alias cmgwS='chezmoi git -- status'
+alias cmlg='(cd "$(chezmoi source-path)" && lazygit)'
+alias cmls='chezmoi managed'
+alias cmm='chezmoi merge'
+alias cmma='chezmoi merge-all'
+alias cmra='chezmoi re-add'
+alias cms='chezmoi status'
+alias cmx='chezmoi forget'
+alias cmX='chezmoi remove'
