@@ -1,0 +1,15 @@
+# function setup-rust-completion {
+
+if command -v rustup &> /dev/null; then
+
+  if [[ ! -f "${0:a:h}/_rustup" ]]; then
+    rustup completions zsh >! "${0:a:h}/_rustup"
+  fi
+
+  if [[ ! -f "${0:a:h}/_cargo" ]]; then
+    rustup completions zsh cargo >! "${0:a:h}/_cargo"
+  fi
+
+fi
+
+# }
