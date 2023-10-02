@@ -25,7 +25,8 @@ alias tmuxpe='(tmuxpcd && fzf | xargs e)'
 #
 # vim
 #
-alias nvime='(cd $XDG_CONFIG_HOME/nvim && nvim)'
+alias nvime='(nvimcd && nvim)'
+alias nvimcd='cd $XDG_CONFIG_HOME/nvim'
 
 #
 # zsh
