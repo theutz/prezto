@@ -33,12 +33,13 @@ alias nvimcd='cd $XDG_CONFIG_HOME/nvim'
 #
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
-alias aliases="$EDITOR ${0:a} && exec zsh"
+alias aliases="e ${0:a} && exec zsh"
+alias zshcd='cd ${ZPREZTODIR}'
 for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
-  alias ".${rcfile:t}"="(cd $ZPREZOTDIR && $EDITOR $rcfile) && exec zsh"
+  alias ".${rcfile:t}"="(zshcd && e $rcfile) && exec zsh"
 done
-alias "${ZPREZTODIR:t}"='(cd "$ZPREZTODIR" && $EDITOR .) && exec zsh'
-alias .zsecrets='$EDITOR "$(chezmoi target-path)"/.zsecrets'
+alias "${ZPREZTODIR:t}"='(zshcd && e .) && exec zsh'
+alias .zsecrets='e "$(chezmoi target-path)"/.zsecrets'
 
 #
 # suffix aliases
