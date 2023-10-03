@@ -62,6 +62,7 @@ typeset -gU cdpath fpath mailpath path
 path=(
   $HOME/{,s}bin(N)
   $HOME/.local/bin
+  $HOME/.config/composer/vendor/bin
   $XDG_DATA_HOME/bob/nvim-bin
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
