@@ -1,0 +1,8 @@
+# Get the session name
+if [[ -n "$@" ]]; then
+  session="$@"
+else
+  session="$(tmuxp ls | fzf)"
+fi
+
+(cd $XDG_CONFIG_HOME/tmuxp && $EDITOR "$session".yml)

@@ -12,6 +12,7 @@ alias tmuxe='(cd $XDG_CONFIG_HOME/tmux && e tmux.conf)'
 
 # tmuxp
 alias txa='tmuxp-attach'
+alias txe='tmuxp-edit'
 alias tmuxpcd='zsh -c "cd $XDG_CONFIG_HOME/tmuxp && zsh"'
 alias tmuxpe='(cd $XDG_CONFIG_HOME/tmuxp && fzf | xargs $EDITOR)'
 
