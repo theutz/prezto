@@ -92,6 +92,4 @@ if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
 fi
 
 #
-# Rust
 #
-. "$HOME/.cargo/env"

@@ -19,11 +19,6 @@ fi
 [[ ! -f "$ZDOTDIR"/.zaliases ]] || source "$ZDOTDIR"/.zaliases
 
 #
-# rust
-#
-source "$HOME/.cargo/env"
-
-#
 # asdf
 #
 if command -v asdf > /dev/null; then

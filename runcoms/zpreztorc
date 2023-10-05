@@ -262,6 +262,16 @@ zstyle ':prezto:module:prompt' show-return-val 'yes'
 # zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 #
+# Rust
+#
+
+# Use XDG_DATA_HOME/cargo instead of $HOME/.cargo
+zstyle ':prezto:module:rust:dir' use-xdg 'yes'
+
+# Enable completions
+zstyle ':prezto:module:rust:completion' enable 'yes'
+
+#
 # Screen
 #
 
