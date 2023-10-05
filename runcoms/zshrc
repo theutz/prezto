@@ -36,3 +36,15 @@ fi
 # rust
 #
 source "$HOME/.cargo/env"
+
+#
+# asdf
+#
+if command -v asdf > /dev/null; then
+  if [[ "$OSTYPE" == darwin* ]]; then
+    source "$(brew --prefix asdf)/libexec/asdf.sh"
+    fpath=(${ASDF_DIR}/completions $fpath)
+  else
+    source "$HOME/.asdf/asdf"
+  fi
+fi
