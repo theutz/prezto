@@ -103,3 +103,8 @@ export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
 #
 export GOPATH="$XDG_DATA_HOME"/go
 
+#
+# MySQL
+#
+export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
+
