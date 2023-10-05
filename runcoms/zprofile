@@ -98,3 +98,8 @@ export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 #
 export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
 
+#
+# Go
+#
+export GOPATH="$XDG_DATA_HOME"/go
+
