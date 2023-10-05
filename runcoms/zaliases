@@ -25,7 +25,7 @@ alias nvimcd='zsh -c "cd $XDG_CONFIG_HOME/nvim && zsh"'
 #
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
-alias aliases="e ${0:a} && exec zsh"
+alias aliases="$EDITOR ${0:a} && exec zsh"
 alias zshcd='zsh -c "cd ${ZPREZTODIR} && zsh" && exec zsh'
 alias zshe='(cd "$ZPREZTODIR" && $EDITOR) && exec zsh'
 for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
