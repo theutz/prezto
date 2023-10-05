@@ -113,3 +113,9 @@ export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
 #
 export NB_DIR="$XDG_DATA_HOME/nb"
 export NBRC_PATH="$XDG_CONFIG_HOME"/nbrc
+
+#
+# Rust
+#
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+. "$CARGO_HOME/env"
