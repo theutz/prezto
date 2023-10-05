@@ -94,4 +94,7 @@ fi
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 
 #
+# Ansible
 #
+export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
+
