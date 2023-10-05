@@ -1,6 +1,3 @@
-# kitty
-alias themes='kitty -1 sh -c "kitty +kitten themes"'
-
 # ai
 alias ask='sgpt'
 alias hal='interpreter'
