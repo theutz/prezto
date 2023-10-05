@@ -48,6 +48,7 @@ zstyle ':prezto:load' pmodule \
 	'git' \
   'lazygit' \
 	'archive' \
+  'php' \
 	'rsync' \
 	'python' \
 	'completion' \
