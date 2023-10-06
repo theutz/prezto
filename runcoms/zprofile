@@ -117,4 +117,4 @@ export NBRC_PATH="$XDG_CONFIG_HOME"/nbrc
 # Rust
 #
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
-. "$CARGO_HOME/env"
+[[ -s "$CARGO_HOME/env" ]] && . "$CARGO_HOME/env"
