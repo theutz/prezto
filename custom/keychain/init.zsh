@@ -1,3 +1,7 @@
+if ! (( $+commands[keychain] )); then
+  exit 0
+fi
+
 zstyle -a ':prezto:module:keychain' keys 'keychain_keys'
 zstyle -s ':prezto:module:keychain' agents 'keychain_agents' ','
 
