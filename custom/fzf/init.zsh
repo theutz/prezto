@@ -1,13 +1,5 @@
 pmodload 'helper'
 
-if ! is-callable tmux || ! is-callable tmuxp || ! is-callable fzf; then
-  for _f in tmuxp-attach tmuxp-edit; do
-    if (( $+functions[$_f] )); then
-      unfunction $_f
-    fi
-  done
-fi
-
 setopt ALL_EXPORT
 
 zstyle -s ':prezto:module:fzf:default' command 'FZF_DEFAULT_COMMAND'
