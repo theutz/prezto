@@ -1,7 +1,11 @@
 pmodload 'helper'
 
 if ! is-callable tmux || ! is-callable tmuxp || ! is-callable fzf; then
-  unfunction tmuxp-attach tmuxp-edit
+  for _f in tmuxp-attach tmuxp-edit; do
+    if (( $+functions[$_f] )); then
+      unfunction $_f
+    fi
+  done
 fi
 
 setopt ALL_EXPORT
