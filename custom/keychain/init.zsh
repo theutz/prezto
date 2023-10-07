@@ -1,5 +1,5 @@
 if ! (( $+commands[keychain] )); then
-  exit 0
+  return 0
 fi
 
 zstyle -a ':prezto:module:keychain' keys 'keychain_keys'
