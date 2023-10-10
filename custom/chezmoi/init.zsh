@@ -15,7 +15,7 @@ unset secret_file{,s}
 
 alias cm='chezmoi'
 alias cma='chezmoi add'
-alias cmA='chezmoi apply'
+alias cmA='chezmoi apply -v'
 alias cmcd='chezmoi cd'
 alias cmd='chezmoi diff'
 alias cme='chezmoi-edit'
