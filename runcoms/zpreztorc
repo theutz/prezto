@@ -34,37 +34,45 @@ zstyle ':prezto:load' zfunction 'zargs' 'zmv'
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
-zstyle ':prezto:load' pmodule \
-  'zsh-defer' \
-	'environment' \
-	'terminal' \
-	'editor' \
-	'history' \
-	'directory' \
-	'spectrum' \
-	'gnu-utility' \
-	'utility' \
-	'homebrew' \
-  'keychain' \
-	'osx' \
-  'lf' \
-	'command-not-found' \
-	'tmux' \
-	'git' \
-  'lazygit' \
-	'archive' \
-  'php' \
-	'rsync' \
-	'python' \
-	'completion' \
-  'zoxide' \
-  'fzf' \
-  'chezmoi' \
-  'rust' \
-	'syntax-highlighting' \
-	'history-substring-search' \
-	'autosuggestions' \
-	'prompt'
+prezto_modules=(
+  zsh-defer
+
+	environment
+	terminal
+	editor
+	history
+	directory
+	spectrum
+
+	gnu-utility
+	utility
+
+	homebrew
+  keychain
+	osx
+  lf
+	command-not-found
+	tmux
+	git
+  lazygit
+	archive
+  php
+	rsync
+	python
+
+	completion
+
+  zoxide
+  fzf
+  chezmoi
+  rust
+	syntax-highlighting
+	history-substring-search
+	autosuggestions
+	prompt
+)
+zstyle ':prezto:load' pmodule "$prezto_modules[@]"
+unset prezto_modules
 
 #
 # Autosuggestions
@@ -208,6 +216,7 @@ zstyle ':prezto:module:keychain' quiet 'yes'
 
 # Add the keys that should be managed by keychain
 zstyle ':prezto:module:keychain' keys "$KEYCHAIN_KEYS[@]"
+unset KEYCHAIN_KEYS
 
 # Add the agents that keychain should manage
 zstyle ':prezto:module:keychain' agents \
