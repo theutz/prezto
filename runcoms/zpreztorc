@@ -57,6 +57,7 @@ prezto_modules=(
   lazygit
 	archive
   php
+  nvim
 	rsync
 	python
 
@@ -229,6 +230,16 @@ zstyle ':prezto:module:keychain' agents \
 
 # Set the keyword used by `mand` to open man pages in Dash.app
 # zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
+
+#
+# nvim
+#
+
+# Enable the bob neovim version manager
+zstyle 'prezto:modules:nvim:bob' enable 'yes'
+
+# Use neovim as your manpage viewer
+zstyle 'prezto:modules:nvim:man' enable 'yes'
 
 #
 # Pacman
