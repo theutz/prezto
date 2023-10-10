@@ -6,6 +6,11 @@
 #
 
 #
+# Secrets
+#
+[[ -s "$ZDOTDIR"/secrets.zsh ]] && source "$ZDOTDIR"/secrets.zsh
+
+#
 # General
 #
 
@@ -202,11 +207,7 @@ zstyle ':prezto:module:lf' cd 'yes'
 zstyle ':prezto:module:keychain' quiet 'yes'
 
 # Add the keys that should be managed by keychain
-zstyle ':prezto:module:keychain' keys \
-  "id_ed25519" \
-  "6AEFB22E" \
-  "FD235DFD" \
-  "48B95546"
+zstyle ':prezto:module:keychain' keys "$KEYCHAIN_KEYS[@]"
 
 # Add the agents that keychain should manage
 zstyle ':prezto:module:keychain' agents \

@@ -16,7 +16,7 @@ fi
 # Aliases
 #
 
-[[ ! -f "$ZDOTDIR"/.zaliases ]] || source "$ZDOTDIR"/.zaliases
+[[ -s "$ZDOTDIR"/aliases.zsh ]] && source "$ZDOTDIR"/aliases.zsh
 
 #
 # asdf
