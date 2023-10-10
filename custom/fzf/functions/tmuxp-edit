@@ -2,7 +2,7 @@
 if [[ -n "$@" ]]; then
   session="$@"
 else
-  session="$(tmuxp ls | fzf)"
+  session="$(tmuxp ls | fzf-tmux)"
 fi
 
 (cd $XDG_CONFIG_HOME/tmuxp && $EDITOR "$session".yml)
