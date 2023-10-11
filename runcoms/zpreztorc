@@ -381,3 +381,10 @@ zstyle ':prezto:module:tmux:session' name 'home'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'yes'
+
+#
+# zoxide
+#
+
+# Shadow the `cd` command with zoxide
+zstyle ':prezto:module:zoxide:alias-cd' enable 'yes'
