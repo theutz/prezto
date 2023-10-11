@@ -13,4 +13,4 @@ for secret_file in "${(k)secret_files[@]}"; do
 done
 unset secret_file{,s}
 
-source "${0:a:h}/aliases.zsh"
+source "${0:a:h}/alias.zsh"

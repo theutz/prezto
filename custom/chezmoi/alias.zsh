@@ -1,7 +1,7 @@
 alias cm='chezmoi'
 alias cma='chezmoi add'
 alias cmA='chezmoi apply -v'
-alias cmcd='chezmoi cd'
+alias cmcd='cd "$(chezmoi source-path)"'
 alias cmd='chezmoi diff'
 alias cme='chezmoi-edit'
 alias cmg='chezmoi git'
