@@ -26,20 +26,20 @@ alias hal='interpreter'
 alias to-ai='mods chat'
 
 # tmux
-alias tmuxcd='zsh -ci "cd ~tmux && zsh"'
+alias tmuxcd='cd ~tmux'
 alias tmuxe='(cd ~tmux && e tmux.conf)'
 alias fzt='fzf-tmux'
 
 # tmuxp
 alias txa='tmuxp-attach'
 alias txe='tmuxp-edit'
-alias tmuxpcd='zsh -ci "cd ~tmuxp && zsh"'
+alias tmuxpcd='cd ~tmuxp'
 alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
 
 #
 # vim
 #
-alias nvimcd='zsh -ci "cd ~nvim && zsh"'
+alias nvimcd='cd ~nvim'
 alias nvime='(nvimcd && nvim)'
 
 #
@@ -48,13 +48,13 @@ alias nvime='(nvimcd && nvim)'
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="$EDITOR ${0:a} && exec zsh"
-alias zshcd='zsh -ci "cd ~zsh && zsh" && exec zsh'
+alias zshcd='cd ~zsh'
 alias zshe='(cd ~zsh && $EDITOR) && exec zsh'
 for rcfile in ~prezto/runcoms/^README.md; do
   alias ".${rcfile:t}e"="(cd ~prezto && e $rcfile) && exec zsh"
 done
 alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && exec zsh'
-alias "${ZPREZTODIR:t}cd"='zsh -ci "cd ~prezto && zsh"'
+alias "${ZPREZTODIR:t}cd"='cd ~prezto'
 
 #
 # suffix aliases
