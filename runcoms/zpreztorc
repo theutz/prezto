@@ -57,7 +57,6 @@ prezto_modules=(
   lazygit
 	archive
   php
-  nvim
 	rsync
 	python
 
@@ -67,6 +66,7 @@ prezto_modules=(
   fzf
   chezmoi
   rust
+  neovim
 	syntax-highlighting
 	history-substring-search
 	autosuggestions
@@ -232,7 +232,7 @@ zstyle ':prezto:module:keychain' agents \
 # zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
 
 #
-# nvim
+# neovim
 #
 
 # Enable the bob neovim version manager
