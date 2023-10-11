@@ -57,6 +57,7 @@ prezto_modules=(
   lazygit
 	archive
   php
+  nb
 	rsync
 	python
 
@@ -230,6 +231,13 @@ zstyle ':prezto:module:keychain' agents \
 
 # Set the keyword used by `mand` to open man pages in Dash.app
 # zstyle ':prezto:module:osx:man' dash-keyword 'manpages'
+
+#
+# nb
+#
+
+# Autostart the nb browser in a tmux session
+zstyle ':prezto:module:nb:server' autostart 'yes'
 
 #
 # neovim
