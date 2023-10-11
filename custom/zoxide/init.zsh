@@ -11,3 +11,7 @@ fi
 
 alias cdi="zi"
 
+if zstyle -T ':prezto:module:zoxide:widget' enable; then
+  zle -N zoxide-interactive
+  bindkey -M viins '^n' zoxide-interactive
+fi
