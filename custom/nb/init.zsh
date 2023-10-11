@@ -7,6 +7,7 @@ fi > /dev/null
 alias nba='nb add'
 alias nbb='nb bookmark'
 alias nbbls='nb bookmark ls'
+alias nbcd='cd "$(nb settings get nb_dir | tr -d \"\\n\")"'
 alias nbcp='nb copy'
 alias nbd='nb do'
 alias nbD='nb undo'
