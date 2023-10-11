@@ -1,24 +1,46 @@
+#
+# Named Directories
+#
+
+hash -d config=$XDG_CONFIG_HOME
+hash -d state=$XDG_STATE_HOME
+hash -d data=$XDG_DATA_HOME
+hash -d cache=$XDG_CACHE_HOME
+hash -d zsh=$ZDOTDIR
+hash -d tmux=~config/tmux
+hash -d tmuxp=~config/tmuxp
+hash -d nvim=~config/nvim
+hash -d prezto=$ZPREZTODIR
+hash -d chezmoi=~data/chezmoi
+hash -d home=~
+hash -d code=~/code
+hash -d theutz=~code/theutz
+
+#
+# Aliases
+#
+
 # ai
 alias ask='sgpt'
 alias hal='interpreter'
 alias to-ai='mods chat'
 
 # tmux
-alias tmuxcd='zsh -c "cd $XDG_CONFIG_HOME/tmux && zsh"'
-alias tmuxe='(cd $XDG_CONFIG_HOME/tmux && e tmux.conf)'
+alias tmuxcd='zsh -ci "cd ~tmux && zsh"'
+alias tmuxe='(cd ~tmux && e tmux.conf)'
 alias fzt='fzf-tmux'
 
 # tmuxp
 alias txa='tmuxp-attach'
 alias txe='tmuxp-edit'
-alias tmuxpcd='zsh -c "cd $XDG_CONFIG_HOME/tmuxp && zsh"'
-alias tmuxpe='(cd $XDG_CONFIG_HOME/tmuxp && fzf | xargs $EDITOR)'
+alias tmuxpcd='zsh -ci "cd ~tmuxp && zsh"'
+alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
 
 #
 # vim
 #
+alias nvimcd='zsh -ci "cd ~nvim && zsh"'
 alias nvime='(nvimcd && nvim)'
-alias nvimcd='zsh -c "cd $XDG_CONFIG_HOME/nvim && zsh"'
 
 #
 # zsh
@@ -26,12 +48,13 @@ alias nvimcd='zsh -c "cd $XDG_CONFIG_HOME/nvim && zsh"'
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="$EDITOR ${0:a} && exec zsh"
-alias zshcd='zsh -c "cd ${ZDOTDIR} && zsh" && exec zsh'
-alias zshe='(cd "$ZDOTDIR" && $EDITOR) && exec zsh'
-for rcfile in "${ZPREZTODIR}"/runcoms/^README.md; do
-  alias ".${rcfile:t}"="(cd \"\$ZPREZTODIR\" && e $rcfile) && exec zsh"
+alias zshcd='zsh -ci "cd ~zsh && zsh" && exec zsh'
+alias zshe='(cd ~zsh && $EDITOR) && exec zsh'
+for rcfile in ~prezto/runcoms/^README.md; do
+  alias ".${rcfile:t}e"="(cd ~prezto && e $rcfile) && exec zsh"
 done
-alias "${ZPREZTODIR:t}"='(cd "$ZPREZTODIR" && e .) && exec zsh'
+alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && exec zsh'
+alias "${ZPREZTODIR:t}cd"='zsh -ci "cd ~prezto && zsh"'
 
 #
 # suffix aliases
