@@ -71,6 +71,7 @@ prezto_modules=(
 	syntax-highlighting
 	history-substring-search
 	autosuggestions
+  widgets
 	prompt
 )
 zstyle ':prezto:load' pmodule "$prezto_modules[@]"
@@ -381,6 +382,10 @@ zstyle ':prezto:module:tmux:session' name 'home'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 zstyle ':prezto:module:utility' safe-ops 'yes'
+
+#
+# Widgets
+#
 
 #
 # zoxide

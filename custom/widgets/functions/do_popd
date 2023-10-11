@@ -1,0 +1,2 @@
+builtin popd
+zle reset-prompt
