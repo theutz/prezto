@@ -6,4 +6,4 @@ linode-cli linodes ls --json |
   tr -d "'" |
   column -t |
   fzf --nth 2 --header-lines 1 --query="$1" --select-1 |
-  awk '{ print $4 }'
+  awk '{ print $NF }'
