@@ -37,6 +37,11 @@ alias tmuxpcd='cd ~tmuxp'
 alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
 
 #
+# ssh
+#
+alias sshe='(cd ~/.ssh && e config)'
+
+#
 # vim
 #
 alias nvimcd='cd ~nvim'
