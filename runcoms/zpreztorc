@@ -60,6 +60,7 @@ prezto_modules=(
   nb
 	rsync
 	python
+  linode
 
 	completion
 
