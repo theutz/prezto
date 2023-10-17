@@ -1,3 +1,10 @@
 # vim: ft=zsh
 
-ssh "$(linode-get-ip "$1")"
+ip="$(linode-get-ip "$1")"
+user=""
+
+if [[ -n "$2" ]]; then
+  user="$2@"
+fi
+
+ssh "${user}${ip}"
