@@ -1,2 +1,2 @@
 export GOPATH="$XDG_DATA_HOME/go"
-export path=("$GOPATH/bin")
+export path=("$GOPATH/bin" $path)
