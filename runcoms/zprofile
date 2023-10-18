@@ -97,11 +97,6 @@ export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
 
 #
-# Go
-#
-export GOPATH="$XDG_DATA_HOME"/go
-
-#
 # MySQL
 #
 export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
