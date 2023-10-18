@@ -33,6 +33,7 @@ alias fzt='fzf-tmux'
 # tmuxp
 alias txa='tmuxp-attach'
 alias txe='tmuxp-edit'
+alias txl='tmuxp-load'
 alias tmuxpcd='cd ~tmuxp'
 alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
 
