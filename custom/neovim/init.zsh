@@ -9,3 +9,6 @@ if zstyle -T ':prezto:modules:nvim:man' enable; then
   export MANPAGER='nvim +Man!'
   export MANWIDTH='999'
 fi
+
+# Get rid of annoying delay after pressing escape
+set KEYTIMEOUT=1
