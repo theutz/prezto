@@ -15,6 +15,7 @@ hash -d chezmoi=~data/chezmoi
 hash -d home=~
 hash -d code=~/code
 hash -d theutz=~code/theutz
+hash -d delegator=~code/delegator
 
 #
 # Aliases
