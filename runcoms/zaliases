@@ -18,6 +18,19 @@ hash -d theutz=~code/theutz
 hash -d delegator=~code/delegator
 
 #
+# suffix aliases
+#
+alias -s {md,markdown,mkdwn}="glow -p"
+alias -s {yml,yaml,json,js,css,scss,ts,tsx,jsx,toml,conf}="e"
+
+#
+# global aliases
+#
+alias -g P="| ${(z)PAGER:-less}"
+alias -g @noerr='2>/dev/null'
+alias -g @noout='&>/dev/null'
+
+#
 # Aliases
 #
 
@@ -62,16 +75,3 @@ for rcfile in ~prezto/runcoms/^README.md; do
 done
 alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && exec zsh'
 alias "${ZPREZTODIR:t}cd"='cd ~prezto'
-
-#
-# suffix aliases
-#
-alias -s {md,markdown,mkdwn}="glow -p"
-alias -s {yml,yaml,json,js,css,scss,ts,tsx,jsx,toml,conf}="e"
-
-#
-# global aliases
-#
-alias -g P="| ${(z)PAGER:-less}"
-alias -g @noerr='2>/dev/null'
-alias -g @noout='&>/dev/null'
