@@ -70,6 +70,7 @@ alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="$EDITOR ${0:a} && exec zsh"
 alias zshcd='cd ~zsh'
 alias zshe='(cd ~zsh && $EDITOR) && exec zsh'
+alias prezto='(cd ~prezto && $EDITOR) && exec zsh'
 for rcfile in ~prezto/runcoms/^README.md; do
   alias ".${rcfile:t}e"="(cd ~prezto && e $rcfile) && exec zsh"
 done
