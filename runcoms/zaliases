@@ -63,6 +63,12 @@ alias nvimcd='cd ~nvim'
 alias nvime='(nvimcd && nvim)'
 
 #
+# etc
+#
+alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
+alias hosts='sudo $EDITOR /etc/hosts && flushdns'
+
+#
 # zsh
 #
 alias ez="exec zsh"
