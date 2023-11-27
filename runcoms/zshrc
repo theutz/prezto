@@ -29,3 +29,6 @@ if command -v asdf > /dev/null; then
     source "$HOME/.asdf/asdf"
   fi
 fi
+
+test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
+
