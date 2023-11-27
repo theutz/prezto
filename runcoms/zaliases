@@ -51,26 +51,25 @@ alias txl='tmuxp-load'
 alias tmuxpcd='cd ~tmuxp'
 alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
 
-#
 # ssh
-#
 alias sshe='(cd ~/.ssh && e config)'
 
-#
 # vim
-#
 alias nvimcd='cd ~nvim'
 alias nvime='(nvimcd && nvim)'
 
-#
+# just
+alias j=just
+
+# spotify
+alias spt='spotify_player'
+
 # etc
-#
 alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
 alias hosts='sudo $EDITOR /etc/hosts && flushdns'
 
-#
 # zsh
-#
+alias se='whence -pm '"'"'*'"'"' | grep -i' # search for executables
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="$EDITOR ${0:a} && exec zsh"
