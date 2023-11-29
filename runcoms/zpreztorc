@@ -56,6 +56,7 @@ prezto_modules=(
 	git
   lazygit
 	archive
+  zellij
   php
   nb
 	rsync

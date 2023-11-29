@@ -10,6 +10,7 @@ hash -d zsh=$ZDOTDIR
 hash -d tmux=~config/tmux
 hash -d tmuxp=~config/tmuxp
 hash -d nvim=~config/nvim
+hash -d zj=~config/zellij
 hash -d prezto=$ZPREZTODIR
 hash -d chezmoi=~data/chezmoi
 hash -d home=~
