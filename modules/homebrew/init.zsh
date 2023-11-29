@@ -25,6 +25,14 @@ if (( $+commands[brew] )); then
 fi
 
 #
+# Completions
+#
+fpath=(
+  /opt/homebrew/share/zsh/site-functions
+  $fpath
+)
+
+#
 # Aliases
 #
 
