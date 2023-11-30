@@ -1,12 +1,28 @@
 # vim: ft=zsh
 
-result="$(tmuxp ls | sk-tmux --select-1 --query "$argv" --print-query)"
+if [[ -n "$argv" ]]; then
+  initial="$argv"
+else
+  current_session="$(tmux ls | awk '/\(attached\)/ { print $1 }' | tr -d :)"
+
+  if [[ -n "$current_session" ]]; then
+    initial="$current_session"
+  fi
+fi
+
+result="$(tmuxp ls | sk-tmux --select-1 --query "$initial" --print-query)"
 echo $result | paste -d : - - | IFS=: read query session
 
 if [[ -z "$session" ]]; then
-  if gum confirm "No session selected. Create one named ${query}?"; then
-    session="$query"
+  if [[ -n "$query" ]]; then
+    if gum confirm "Create a session named '${query}'?"; then
+      session="$query"
+    else
+      echo "No session selected."
+      return 1
+    fi
   else
+    echo "No session selected."
     return 1
   fi
 fi
