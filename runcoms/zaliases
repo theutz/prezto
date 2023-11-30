@@ -44,12 +44,8 @@ alias to-ai='mods chat'
 # tmux
 alias tmuxcd='cd ~tmux'
 alias tmuxe='(cd ~tmux && e tmux.conf)'
-alias fzt='fzf-tmux'
 
 # tmuxp
-alias txa='tmuxp-attach'
-alias txe='tmuxp-edit'
-alias txl='tmuxp-load'
 alias tmuxpcd='cd ~tmuxp'
 alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
 
@@ -75,7 +71,8 @@ alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
 alias hosts='sudo $EDITOR /etc/hosts && flushdns'
 
 # zsh
-alias se='whence -pm '"'"'*'"'"' | grep -i' # search for executables
+alias sa="alias | sk --multi"
+alias se='whence -pm '"'"'*'"'"' | sk --multi' # search for executables
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="$EDITOR ${0:a} && exec zsh"

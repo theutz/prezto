@@ -114,3 +114,8 @@ export NBRC_PATH="$XDG_CONFIG_HOME"/nbrc
 #
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 [[ -s "$CARGO_HOME/env" ]] && . "$CARGO_HOME/env"
+
+#
+# skim
+#
+export SKIM_DEFAULT_OPTIONS="--bind='ctrl-a:toggle-all'"
