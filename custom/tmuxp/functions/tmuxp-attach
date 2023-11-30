@@ -7,7 +7,9 @@ if [[ -z "$session" ]]; then
   return 1
 fi
 
-tmuxp-load $session
+if ! tmux has-session -t "$session" &>/dev/null; then
+  tmuxp load -d "$session"
+fi
 
 {
   tmux attach-session -t "$session" || tmux switch-client -t "$session"
