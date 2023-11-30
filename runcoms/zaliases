@@ -60,6 +60,10 @@ alias sshe='(cd ~/.ssh && e config)'
 alias nvimcd='cd ~nvim'
 alias nvime='(nvimcd && nvim)'
 
+# hcp
+alias tf='terraform'
+alias pkr='packer'
+
 # just
 alias j=just
 
