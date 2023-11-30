@@ -1,0 +1,14 @@
+# vim: ft=zsh
+
+result="$(tmuxp ls | sk-tmux --select-1 --query "$argv" --print-query)"
+echo $result | paste -d : - - | IFS=: read query session
+
+if [[ -z "$session" ]]; then
+  if gum confirm "No session selected. Create one named ${query}?"; then
+    session="$query"
+  else
+    return 1
+  fi
+fi
+
+(cd $XDG_CONFIG_HOME/tmuxp && $EDITOR "$session".yml)

@@ -1,0 +1,14 @@
+# vim: ft=zsh
+
+session="$(tmuxp ls | sk-tmux --select-1 --query "$argv")"
+
+if [[ -z "$session" ]]; then
+  echo "No session selected."
+  return 1
+fi
+
+tmuxp-load $session
+
+{
+  tmux attach-session -t "$session" || tmux switch-client -t "$session"
+} &>/dev/null

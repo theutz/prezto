@@ -1,0 +1,7 @@
+# vim: ft=zsh
+
+session="$(tmuxp ls | sk --select-1 --query "$argv")"
+
+if ! tmux has-session -t "$session" &>/dev/null; then
+  tmuxp load -d "$session"
+fi

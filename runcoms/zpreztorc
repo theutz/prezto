@@ -53,6 +53,7 @@ prezto_modules=(
   lf
 	command-not-found
 	tmux
+  tmuxp
 	git
   lazygit
 	archive
