@@ -1,10 +1,6 @@
 # vim: ft=zsh
 
-ip="$(linode-get-ip "$1")"
-user=""
+USER="${1:-root}"
+LABEL="$(linode-cli linodes ls --text | column -t | sk --header-lines=1 | awk '{ print $2 }' | tr -d "[:space:]")"
 
-if [[ -n "$2" ]]; then
-  user="$2@"
-fi
-
-ssh "${user}${ip}"
+linode-cli ssh $USER@$LABEL

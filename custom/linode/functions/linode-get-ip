@@ -1,10 +1,8 @@
 # vim: ft=zsh
 
-linode-cli linodes ls --json |
-  jq -r '.[] | [.id, .label, .region, .type, .image, .status, .ipv4[0]] | @sh' |
-  { echo "ID Label Region Type Image Status IP"; cat } |
-  tr -d "'" |
+linode-cli linodes ls --text |
   column -t |
-  fzf --nth 2 --header-lines 1 --query="$1" --select-1 |
-  awk '{ print $NF }' |
+  sk --header-lines=1 |
+  awk '{ print $7 }' |
+  tr -d '[:space:]' |
   tee >(pbcopy)
