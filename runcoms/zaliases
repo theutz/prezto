@@ -10,7 +10,7 @@ hash -d zsh=$ZDOTDIR
 hash -d tmux=~config/tmux
 hash -d tmuxp=~config/tmuxp
 hash -d nvim=~config/nvim
-hash -d wezterm=~config/wezterm
+hash -d wez=~config/wezterm
 hash -d zj=~config/zellij
 hash -d prezto=$ZPREZTODIR
 hash -d chezmoi=~data/chezmoi
@@ -48,6 +48,8 @@ alias tmuxe='(cd ~tmux && e tmux.conf)'
 # tmuxp
 alias tmuxpcd='cd ~tmuxp'
 alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
+
+alias wez='(cd ~wez && e wezterm.lua)'
 
 # ssh
 alias sshe='(cd ~/.ssh && e config)'
