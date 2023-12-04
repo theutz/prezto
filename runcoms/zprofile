@@ -64,6 +64,7 @@ path=(
   $HOME/.local/bin
   $HOME/bin
   $HOME/.config/phpmon/bin
+  $HOME/.config/emacs/bin
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
   $path
