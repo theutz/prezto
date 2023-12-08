@@ -1,6 +1,6 @@
 # vim: ft=zsh
 
-USER="${1:-root}"
 LABEL="$(linode-cli linodes ls --text | column -t | sk --header-lines=1 | awk '{ print $2 }' | tr -d "[:space:]")"
+USER="$(gum input --placeholder="Type a username...")"
 
 linode-cli ssh $USER@$LABEL
