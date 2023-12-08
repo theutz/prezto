@@ -29,3 +29,8 @@ if command -v asdf > /dev/null; then
     source "$HOME/.asdf/asdf"
   fi
 fi
+
+#
+# fuck
+#
+eval $(thefuck --alias)
