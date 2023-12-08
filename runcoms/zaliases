@@ -89,3 +89,9 @@ alias "${ZPREZTODIR:t}cd"='cd ~prezto'
 
 # exercism
 alias exm="exercism"
+
+# ansible
+alias ans=ansible
+alias ansp=ansible-playbook
+alias ansv=ansible-vault
+alias ansc=ansible-console
