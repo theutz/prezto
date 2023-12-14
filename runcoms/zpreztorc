@@ -8,7 +8,7 @@
 #
 # Secrets
 #
-[[ -s "$ZDOTDIR"/secrets.zsh ]] && source "$ZDOTDIR"/secrets.zsh
+[[ -s "$HOME"/.zsecrets ]] && source "$HOME"/.zsecrets
 
 #
 # General
