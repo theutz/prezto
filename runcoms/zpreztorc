@@ -219,7 +219,7 @@ zstyle ':prezto:module:lf' cd 'yes'
 #
 
 # Use 'yes' to silence keychain on prompt initialization
-zstyle ':prezto:module:keychain' quiet 'yes'
+zstyle ':prezto:module:keychain' quiet 'no'
 
 # Add the keys that should be managed by keychain
 zstyle ':prezto:module:keychain' keys "$KEYCHAIN_KEYS[@]"
