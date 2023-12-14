@@ -63,6 +63,9 @@ alias tf='terraform'
 alias tg='terragrunt'
 alias pkr='packer'
 
+# git
+alias gcem='git commit -m "ci: empty commit" --allow-empty && git pull && git push'
+
 # just
 alias j=just
 
