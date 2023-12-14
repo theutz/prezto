@@ -60,6 +60,7 @@ alias nvime='(nvimcd && nvim)'
 
 # hcp
 alias tf='terraform'
+alias tg='terragrunt'
 alias pkr='packer'
 
 # just
