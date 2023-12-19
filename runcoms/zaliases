@@ -66,6 +66,9 @@ alias pkr='packer'
 # git
 alias gcem='git commit -m "ci: empty commit" --allow-empty && git pull && git push'
 
+# doppler ('s' for 'secret')
+alias s=doppler
+
 # just
 alias j=just
 
