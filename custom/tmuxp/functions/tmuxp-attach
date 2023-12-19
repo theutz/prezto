@@ -1,6 +1,10 @@
 # vim: ft=zsh
 
-session="$(tmuxp ls | sk-tmux --select-1 --query "$argv")"
+if [[ -n "$argv" ]]; then
+  immediate="--select-1"
+fi
+
+session="$(tmuxp ls | sk-tmux $immediate --query "$argv")"
 
 if [[ -z "$session" ]]; then
   echo "No session selected."
