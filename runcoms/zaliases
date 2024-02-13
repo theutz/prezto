@@ -68,7 +68,9 @@ alias gcem='git commit -m "ci: empty commit" --allow-empty && git pull && git pu
 alias gfap='git fetch --all --prune'
 
 # just
-alias j=just
+alias j='just --command-color cyan'
+alias jc='j --choose'
+alias jl='j --list'
 
 # spotify
 alias spt='spotify_player'
