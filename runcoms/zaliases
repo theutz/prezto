@@ -65,6 +65,7 @@ alias pkr='packer'
 
 # git
 alias gcem='git commit -m "ci: empty commit" --allow-empty && git pull && git push'
+alias gfap='git fetch --all --prune'
 
 # just
 alias j=just
