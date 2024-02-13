@@ -93,6 +93,7 @@ for rcfile in ~prezto/runcoms/^README.md; do
 done
 alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && exec zsh'
 alias "${ZPREZTODIR:t}cd"='cd ~prezto'
+alias zsecrets='(cd $HOME && $EDITOR .zsecrets)'
 
 # exercism
 alias exm="exercism"
