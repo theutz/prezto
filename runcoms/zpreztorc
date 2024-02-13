@@ -70,6 +70,7 @@ prezto_modules=(
   zoxide
   fzf
   chezmoi
+  pet
   rust
   neovim
 	syntax-highlighting
