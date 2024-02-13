@@ -104,3 +104,6 @@ alias ansp='ansible-playbook'
 alias ansv='ansible-vault'
 alias ansc='ansible-console'
 alias ansi='ansible-inventory'
+
+# pnpm
+alias px='pnpm exec'
