@@ -38,7 +38,8 @@ alias -g @noout='&>/dev/null'
 #
 
 # editor
-alias E="${EDITOR}"
+alias e="${EDITOR}"
+alias v="${VISUAL}"
 
 # hammerspoon
 alias ham='(cd ~hammerspoon && e)'
