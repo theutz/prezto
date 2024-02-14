@@ -1,19 +1,14 @@
-if ! command -v valet &>/dev/null; then
+if ! command -v valet &>/dev/null || (
+  (
+    ! valet links | grep " $(pwd) " &>/dev/null) \
+    && (! valet parked | grep " $(pwd) " &>/dev/null)
+  )
+then
   command pecl $argv[@]
   return $?
 fi
 
-if ! valet links | grep " $(pwd) " &>/dev/null; then
-  command pecl $argv[@]
-  return $?
-fi
-
-if ! valet parked | grep " $(pwd) " &>/dev/null; then
-  command pecl $argv[@]
-  return $?
-fi
-
-$pecl="$(valet which-php | sed 's/php$/pecl/')"
+pecl="$(valet which-php | sed 's/php$/pecl/')"
 
 $pecl $argv[@]
 return $?
