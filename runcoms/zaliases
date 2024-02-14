@@ -18,6 +18,7 @@ hash -d home=~
 hash -d code=~/code
 hash -d theutz=~code/theutz
 hash -d delegator=~code/delegator
+hash -d hammerspoon=~/.hammerspoon
 
 #
 # suffix aliases
@@ -35,6 +36,12 @@ alias -g @noout='&>/dev/null'
 #
 # Aliases
 #
+
+# editor
+alias E="${EDITOR}"
+
+# hammerspoon
+alias ham='(cd ~hammerspoon && e)'
 
 # ai
 alias ask='sgpt'
@@ -84,16 +91,16 @@ alias sa="alias | sk --multi --query"
 alias se='whence -pm '"'"'*'"'"' | sk --multi' # search for executables
 alias ez="exec zsh"
 alias recomp='rm -rf ~/.zcompdump && compinit'
-alias aliases="$EDITOR ${0:a} && exec zsh"
+alias aliases="e ${0:a} && exec zsh"
 alias zshcd='cd ~zsh'
-alias zshe='(cd ~zsh && $EDITOR) && exec zsh'
-alias prezto='(cd ~prezto && $EDITOR) && exec zsh'
+alias zshe='(cd ~zsh && e) && exec zsh'
+alias prezto='(cd ~prezto && e) && exec zsh'
 for rcfile in ~prezto/runcoms/^README.md; do
-  alias ".${rcfile:t}e"="(cd ~prezto && e $rcfile) && exec zsh"
+  alias "${rcfile:t}"="(cd ~prezto && e $rcfile) && exec zsh"
 done
 alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && exec zsh'
 alias "${ZPREZTODIR:t}cd"='cd ~prezto'
-alias zsecrets='(cd $HOME && $EDITOR .zsecrets)'
+alias zsecrets='(cd $HOME && e .zsecrets)'
 
 # exercism
 alias exm="exercism"
