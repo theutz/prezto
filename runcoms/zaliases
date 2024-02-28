@@ -57,7 +57,7 @@ alias tmuxe='(cd ~tmux && e tmux.conf)'
 alias tmuxpcd='cd ~tmuxp'
 alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
 
-alias wez='(cd ~wez && e wezterm.lua)'
+alias wez='(cd ~wez && e)'
 
 # ssh
 alias sshe='(cd ~/.ssh && e config)'
@@ -115,3 +115,7 @@ alias ansi='ansible-inventory'
 
 # pnpm
 alias px='pnpm exec'
+
+# emacs
+alias ee='emacsclient -nw -a ""'
+alias ec='emacsclient -nw --alternate-editor="" --eval '"'"'(org-capture)'"'"
