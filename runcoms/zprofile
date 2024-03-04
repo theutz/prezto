@@ -29,10 +29,10 @@ fi
 #
 
 if [[ -z "$EDITOR" ]]; then
-  export EDITOR='nvim'
+  export EDITOR='vim'
 fi
 if [[ -z "$VISUAL" ]]; then
-  export VISUAL='neovide --no-fork'
+  export VISUAL='vim'
 fi
 if [[ -z "$PAGER" ]]; then
   export PAGER='less'

@@ -29,7 +29,7 @@ alias -s {yml,yaml,json,js,css,scss,ts,tsx,jsx,toml,conf}="e"
 #
 # global aliases
 #
-alias -g P="| ${(z)PAGER:-less}"
+alias -g P='| ${(z)PAGER:-less}'
 alias -g @noerr='2>/dev/null'
 alias -g @noout='&>/dev/null'
 
