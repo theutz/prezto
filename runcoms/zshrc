@@ -13,6 +13,22 @@ fi
 # Customize to your needs...
 
 #
+# Path-based Editors
+#
+if command -v nvim &>/dev/null; then
+  export EDITOR='nvim'
+fi
+if command -v neovide &>/dev/null; then
+  export VISUAL='neovide --no-fork'
+fi
+if command -v gum &>/dev/null; then
+  export PAGER='gum pager'
+fi
+if command -v delta &>/dev/null; then
+  export GIT_PAGER='delta'
+fi
+
+#
 # Aliases
 #
 
@@ -35,18 +51,3 @@ fi
 #
 eval $(thefuck --alias)
 
-#
-# Path-based Editors
-#
-if command -v nvim &>/dev/null; then
-  export EDITOR='nvim'
-fi
-if command -v neovide &>/dev/null; then
-  export VISUAL='neovide --no-fork'
-fi
-if command -v gum &>/dev/null; then
-  export PAGER='gum pager'
-fi
-if command -v delta &>/dev/null; then
-  export GIT_PAGER='delta'
-fi

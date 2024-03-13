@@ -120,3 +120,7 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 # skim
 #
 export SKIM_DEFAULT_OPTIONS="--bind='ctrl-a:toggle-all'"
+
+if [[ -f "$HOME"/.zsecrets ]]; then
+  source "$HOME"/.zsecrets
+fi
