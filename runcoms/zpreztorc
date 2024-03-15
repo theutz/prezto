@@ -52,7 +52,7 @@ prezto_modules=(
 	osx
   lf
 	command-not-found
-	tmux
+	# tmux
   tmuxp
 	git
   lazygit

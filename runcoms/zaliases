@@ -53,10 +53,7 @@ alias to-ai='mods chat'
 alias tmuxcd='cd ~tmux'
 alias tmuxe='(cd ~tmux && e tmux.conf)'
 
-# tmuxp
-alias tmuxpcd='cd ~tmuxp'
-alias tmuxpe='(cd ~tmuxp && fzf | xargs $EDITOR)'
-
+# wezterm
 alias wez='(cd ~wez && e)'
 
 # ssh
