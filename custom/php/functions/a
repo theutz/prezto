@@ -1,0 +1,24 @@
+cmd=""
+if [[ -f ./vendor/bin/sail ]]; then
+  if [[ -f please ]]; then
+    cmd="vendor/bin/sail php please"
+  elif [[ -f artisan ]]; then
+    cmd="vendor/bin/sail artisan"
+  else
+    cmd="vendor/bin/sail"
+  fi
+else
+  if [[ -f please ]]; then
+    cmd="php please"
+  elif [[ -f artisan ]]; then
+    cmd="php artisan"
+  fi
+fi
+
+if [[ -z $@ ]]; then
+  ${(z)cmd} $@ | ${(z)PAGER}
+else
+  ${(z)cmd} $@
+fi
+
+# vim: ft=zsh
