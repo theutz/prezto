@@ -60,6 +60,7 @@ alias sshe='(cd ~/.ssh && e config)'
 # vim
 alias nvimcd='cd ~nvim'
 alias nvime='(nvimcd && e)'
+alias E='${(z)EDITOR}'
 
 # hcp
 alias tf='terraform'

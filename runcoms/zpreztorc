@@ -54,6 +54,7 @@ prezto_modules=(
 	command-not-found
 	tmux
   tmuxp
+  docker
 	git
   lazygit
 	archive
