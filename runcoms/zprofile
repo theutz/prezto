@@ -28,15 +28,11 @@ fi
 # Editors
 #
 
-if [[ -z "$EDITOR" ]]; then
-  export EDITOR='vim'
-fi
-if [[ -z "$VISUAL" ]]; then
-  export VISUAL='vim'
-fi
-if [[ -z "$PAGER" ]]; then
-  export PAGER='less'
-fi
+# export EDITOR='emacsclient --tty --create-frame --alternate-editor ""'
+export EDITOR='nvim'
+# export VISUAL='emacsclient --no-wait --create-frame --alternate-editor ""'
+export VISUAL='neovide --no-fork'
+export PAGER='gum pager'
 
 #
 # Language
