@@ -19,6 +19,7 @@ hash -d code=~/code
 hash -d theutz=~code/theutz
 hash -d delegator=~code/delegator
 hash -d hammerspoon=~/.hammerspoon
+hash -d karabiner=~config/karabiner
 
 #
 # suffix aliases
@@ -37,10 +38,6 @@ alias -g @noout='&>/dev/null'
 # Aliases
 #
 
-# editor
-alias e="${EDITOR}"
-alias v="${VISUAL}"
-
 # hammerspoon
 alias ham='(cd ~hammerspoon && e)'
 
@@ -54,7 +51,8 @@ alias tmuxcd='cd ~tmux'
 alias tmuxe='(cd ~tmux && e tmux.conf)'
 
 # wezterm
-alias wez='(cd ~wez && e)'
+alias weze='(cd ~wez && e)'
+alias wez='wezterm'
 
 # ssh
 alias sshe='(cd ~/.ssh && e config)'
@@ -87,16 +85,16 @@ alias hosts='sudo $EDITOR /etc/hosts && flushdns'
 # zsh
 alias sa="alias | sk --multi --query"
 alias se='whence -pm '"'"'*'"'"' | sk --multi' # search for executables
-alias ez="exec zsh"
+alias reload='exec zsh && source $ZDOTDIR/.zshenv'
 alias recomp='rm -rf ~/.zcompdump && compinit'
-alias aliases="e ${0:a} && exec zsh"
+alias aliases="e ${0:a} && reload"
 alias zshcd='cd ~zsh'
-alias zshe='(cd ~zsh && e) && exec zsh'
-alias prezto='(cd ~prezto && e) && exec zsh'
+alias zshe='(cd ~zsh && e) && reload'
+alias prezto='(cd ~prezto && e) && reload'
 for rcfile in ~prezto/runcoms/^README.md; do
-  alias "${rcfile:t}"="(cd ~prezto && e $rcfile) && exec zsh"
+  alias "${rcfile:t}"="(cd ~prezto && e $rcfile) && reload"
 done
-alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && exec zsh'
+alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && reload'
 alias "${ZPREZTODIR:t}cd"='cd ~prezto'
 alias zsecrets='(cd $HOME && e .zsecrets)'
 
@@ -114,5 +112,8 @@ alias ansi='ansible-inventory'
 alias px='pnpm exec'
 
 # emacs
-alias ee='emacsclient -nw -a ""'
-alias ec='emacsclient -nw --alternate-editor="" --eval '"'"'(org-capture)'"'"
+alias en='e --no-wait'
+alias org='en --eval '"'"'(org-capture)'"'"
+
+# karabiner
+alias kara='(cd ~karabiner && e)'
