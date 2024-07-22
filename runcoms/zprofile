@@ -32,7 +32,7 @@ fi
 export EDITOR='nvim'
 # export VISUAL='emacsclient --no-wait --create-frame --alternate-editor ""'
 export VISUAL='neovide --no-fork'
-export PAGER='gum pager'
+export PAGER='less'
 
 #
 # Language

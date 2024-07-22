@@ -35,7 +35,7 @@ zstyle ':prezto:load' zfunction 'zargs' 'zmv'
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 prezto_modules=(
-  zsh-defer
+  # zsh-defer
 
 	environment
 	terminal
