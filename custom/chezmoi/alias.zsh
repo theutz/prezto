@@ -16,3 +16,5 @@ alias cms='chezmoi status'
 alias cmu='chezmoi update'
 alias cmx='chezmoi forget'
 alias cmX='chezmoi remove'
+
+alias chezomi='chezmoi'
