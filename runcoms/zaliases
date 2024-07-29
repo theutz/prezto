@@ -118,3 +118,21 @@ alias org='en --eval '"'"'(org-capture)'"'"
 
 # karabiner
 alias kara='(cd ~karabiner && e)'
+
+# {time,task}warrior
+alias t='task'
+alias ts='tasksh'
+alias tt='taskwarrior-tui'
+alias tw='timew'
+alias twr='timew summary'
+alias tws='timew start'
+alias twS='timew stop'
+alias twx='timew cancel'
+alias twX='timew delete'
+alias twt='timew track'
+alias twa='timew annotate'
+alias twc='timew continue'
+alias twd='timew day'
+alias tww='timew week'
+alias twe='timew export | ijq'
+alias twE='timew export | jq'
