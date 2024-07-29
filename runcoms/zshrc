@@ -16,7 +16,7 @@ fi
 # Aliases
 #
 
-[[ -s "$ZDOTDIR"/aliases.zsh ]] && source "$ZDOTDIR"/aliases.zsh
+[[ -s "$ZDOTDIR"/.zaliases ]] && source "$ZDOTDIR"/.zaliases
 
 #
 # asdf
