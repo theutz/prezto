@@ -1,10 +1,10 @@
 # vim: ft=zsh
 
 if [[ -n "$argv" ]]; then
-  immediate="--select-1"
+  immediate=('--select-1' '--exact')
 fi
 
-session="$(tmuxp ls | sk $immediate --query "$argv")"
+session="$(tmuxp ls | fzf "${immediate[@]}" --query "$argv")"
 
 if ! tmux has-session -t "$session" &>/dev/null; then
   tmuxp load -d "$session"
