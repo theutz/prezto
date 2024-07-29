@@ -1,0 +1,8 @@
+# vim: ft=zsh
+
+whence -pm '*' | fzf --multi --query="${argv[@]}" \
+  | awk -F '=' '{ print $2 }' \
+  | xargs \
+  | read cmd
+
+print -z $cmd

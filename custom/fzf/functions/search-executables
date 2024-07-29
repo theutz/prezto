@@ -1,0 +1,7 @@
+# vim: ft=zsh
+
+whence -pm '*' \
+  | fzf --multi --query="${argv}" \
+  | read cmd
+
+print -z $cmd

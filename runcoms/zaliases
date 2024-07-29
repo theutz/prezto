@@ -84,8 +84,6 @@ alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
 alias hosts='sudo $EDITOR /etc/hosts && flushdns'
 
 # zsh
-alias sa="alias | sk --multi --query"
-alias se='whence -pm '"'"'*'"'"' | sk --multi' # search for executables
 alias reload='exec zsh && source $ZDOTDIR/.zshenv'
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="e ${0:a} && reload"

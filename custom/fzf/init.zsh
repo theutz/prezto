@@ -17,3 +17,4 @@ zstyle -s ':prezto:module:fzf:tmux' options 'FZF_TMUX_OPTS'
 unsetopt ALL_EXPORT
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ${0:a:h}/aliases.zsh ] && source ${0:a:h}/aliases.zsh
