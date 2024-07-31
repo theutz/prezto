@@ -1,0 +1,21 @@
+# vim: ft=zsh
+
+sockets=$(find /tmp/tmux-$UID -type s -exec basename {} \;)
+
+if [[ -z "$sockets" ]]; then
+  echo "No sockets found."
+  return 1
+fi
+
+socket="$(echo $sockets | fzf)"
+
+if [[ -z "$socket" ]]; then
+  echo "No socket selected."
+  return 1
+fi
+
+if [[ -n "$TMUX" ]]; then
+  tmux detach -E "tmux -L $socket attach"
+else
+  tmux -L $socket attach
+fi
