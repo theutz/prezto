@@ -54,6 +54,7 @@ prezto_modules=(
 	command-not-found
 	tmux
   tmuxp
+  help
   docker
 	git
   lazygit
@@ -399,3 +400,14 @@ zstyle ':prezto:module:utility' safe-ops 'yes'
 
 # Shadow the `cd` command with zoxide
 zstyle ':prezto:module:zoxide:alias-cd' enable 'yes'
+
+#
+# help
+#
+zstyle ':prezto:module:help' helpers \
+  'laravel' 'open https://laravel.com/docs' \
+  'buku' 'man buku' \
+  'edit' "$EDITOR ${funcsourcetrace[1]%:*}" \
+  'tmuxp' 'open https://tmuxp.git-pull.com/configuration/index.html' \
+  'aerospace' 'open https://github.com/nikitabobko/AeroSpace' \
+  'nb' 'open https://xwmx.github.io/nb'
