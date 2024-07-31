@@ -48,8 +48,9 @@ prezto_modules=(
 	utility
 
 	homebrew
-  keychain
 	osx
+  ssh
+  gpg
   lf
 	command-not-found
 	tmux
@@ -218,22 +219,6 @@ zstyle ':prezto:module:history-substring-search' case-sensitive 'yes'
 zstyle ':prezto:module:lf' cd 'yes'
 
 #
-# Keychain
-#
-
-# Use 'yes' to silence keychain on prompt initialization
-zstyle ':prezto:module:keychain' quiet 'no'
-
-# Add the keys that should be managed by keychain
-zstyle ':prezto:module:keychain' keys "$KEYCHAIN_KEYS[@]"
-unset KEYCHAIN_KEYS
-
-# Add the agents that keychain should manage
-zstyle ':prezto:module:keychain' agents \
-  'ssh' \
-  'gpg'
-
-#
 # macOS
 #
 
@@ -321,7 +306,8 @@ zstyle ':prezto:module:rust:completion' enable 'yes'
 #
 
 # Set the SSH identities to load into the agent.
-# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities \
+  $(find ~/.ssh -type f -name 'id_*' -not -name '*.pub' -exec basename {} \;)
 
 #
 # Syntax Highlighting
