@@ -11,7 +11,7 @@ else
   fi
 fi
 
-result="$(tmuxp ls | sk-tmux $immediate --query "$initial" --print-query)"
+result="$(tmuxp ls | fzf $immediate --query "$initial" --print-query)"
 echo $result | paste -d : - - | IFS=: read query session
 
 if [[ -z "$session" ]]; then
@@ -29,3 +29,4 @@ if [[ -z "$session" ]]; then
 fi
 
 (cd $XDG_CONFIG_HOME/tmuxp && $EDITOR "$session".yml)
+
