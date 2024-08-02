@@ -25,7 +25,7 @@ hash -d karabiner=~config/karabiner
 # suffix aliases
 #
 alias -s {md,markdown,mkdwn}="glow -p"
-alias -s {yml,yaml,json,js,css,scss,ts,tsx,jsx,toml,conf}="e"
+alias -s {yml,yaml,json,css,scss,tsx,jsx,toml,conf}="e"
 
 #
 # global aliases
