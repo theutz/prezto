@@ -1,0 +1,19 @@
+# vim: ft=zsh
+
+case "${argv[1]}" in
+  -e|--edit)
+    eval "${VISUAL:-$EDITOR}" "${funcsourcetrace[1]%:*}"
+    exec zsh
+    return
+    ;;
+  *)
+    files="$(qq -r 'keys[]' "$(chezmoi source-path)/.chezmoiexternal.toml")"
+
+    for file in "${(f)files}"; do
+      lazygit --path "$HOME/$file" && git push &
+    done
+
+    return
+    ;;
+esac
+
