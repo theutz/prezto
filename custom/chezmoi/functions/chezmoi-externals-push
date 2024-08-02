@@ -13,6 +13,8 @@ case "${argv[1]}" in
       lazygit --path "$HOME/$file" && git push &
     done
 
+    wait
+
     return
     ;;
 esac
