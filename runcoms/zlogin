@@ -26,4 +26,8 @@ if [[ -o INTERACTIVE && -t 2 ]]; then
   #   print
   # fi
 
+  if (( $+commands[tz] )); then
+    tz -q
+  fi
+
 fi >&2

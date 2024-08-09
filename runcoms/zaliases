@@ -93,6 +93,7 @@ alias prezto='(cd ~prezto && e) && reload'
 for rcfile in ~prezto/runcoms/^README.md; do
   alias "${rcfile:t}"="(cd ~prezto && e $rcfile) && reload"
 done
+alias zmodedit='find ~prezto/{custom,modules} -type d -maxdepth 1 | fzf | xargs -I _ zsh -lc "cd _ && nvim"; exec zsh'
 alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && reload'
 alias "${ZPREZTODIR:t}cd"='cd ~prezto'
 alias zsecrets='(cd $HOME && e .zsecrets)'

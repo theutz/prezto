@@ -21,6 +21,7 @@ fi
 #
 # asdf
 #
+
 if command -v asdf > /dev/null; then
   if [[ "$OSTYPE" == darwin* ]]; then
     source "$(brew --prefix asdf)/libexec/asdf.sh"
@@ -33,6 +34,7 @@ fi
 #
 # fuck
 #
+
 eval $(thefuck --alias)
 
 
@@ -43,3 +45,16 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+#
+# walk
+#
+unalias lk
+function lk {
+  cd "$(walk --icons "$@")"
+}
+
+#
+# tz
+#
+export TZ_LIST="US/Pacific;US/Central;US/Eastern;UTC;Europe/London;Europe/Istanbul"
