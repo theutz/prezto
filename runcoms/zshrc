@@ -12,8 +12,6 @@ fi
 
 # Customize to your needs...
 
-[[ -x $HOME/.local/bin/mise ]] && eval "$($HOME/.local/bin/mise activate zsh)"
-
 #
 # Aliases
 #
