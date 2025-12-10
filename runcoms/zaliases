@@ -1,24 +1,4 @@
 #
-# Named Directories
-#
-
-hash -d config=$XDG_CONFIG_HOME
-hash -d state=$XDG_STATE_HOME
-hash -d data=$XDG_DATA_HOME
-hash -d cache=$XDG_CACHE_HOME
-hash -d zsh=$ZDOTDIR
-hash -d tmux=~config/tmux
-hash -d tmuxp=~config/tmuxp
-hash -d nvim=~config/nvim
-hash -d wezterm=~config/wezterm
-hash -d prezto=$ZPREZTODIR
-hash -d home=~
-hash -d dots=~/dotfiles
-hash -d code=~/code
-hash -d theutz=~code/theutz
-hash -d dg=~code/delegator
-
-#
 # suffix aliases
 #
 alias -s {md,markdown,mkdwn}="glow -p"
@@ -47,8 +27,3 @@ alias hosts='sudo $EDITOR /etc/hosts && flushdns'
 alias reload='exec zsh && source $ZDOTDIR/.zshenv'
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="e ${0:a} && reload"
-
-# ls
-if (( $+commands[lla] )); then
-  alias ls="lla"
-fi
