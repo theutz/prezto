@@ -10,16 +10,13 @@ hash -d zsh=$ZDOTDIR
 hash -d tmux=~config/tmux
 hash -d tmuxp=~config/tmuxp
 hash -d nvim=~config/nvim
-hash -d wez=~config/wezterm
-hash -d zj=~config/zellij
+hash -d wezterm=~config/wezterm
 hash -d prezto=$ZPREZTODIR
-hash -d chezmoi=~data/chezmoi
 hash -d home=~
+hash -d dots=~/dotfiles
 hash -d code=~/code
 hash -d theutz=~code/theutz
-hash -d delegator=~code/delegator
-hash -d hammerspoon=~/.hammerspoon
-hash -d karabiner=~config/karabiner
+hash -d dg=~code/delegator
 
 #
 # suffix aliases
