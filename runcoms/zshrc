@@ -27,13 +27,12 @@ fi
 if command -v thefuck @noout; then
   eval $(thefuck --alias)
 fi
+
+#
 # pnpm
+#
 export PNPM_HOME="/Users/michael/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
+export path=($PNPM_HOME $path)
 
 #
 # walk
