@@ -76,6 +76,7 @@ prezto_modules=(
   chezmoi
   pet
   walk
+  yazi
   neovim
 	syntax-highlighting
 	history-substring-search
