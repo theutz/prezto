@@ -30,51 +30,14 @@ alias -s {yml,yaml,json,css,scss,tsx,jsx,toml,conf}="e"
 alias -g P='| ${(z)PAGER:-less}'
 alias -g @noerr='2>/dev/null'
 alias -g @noout='&>/dev/null'
+alias -g H='--help | P'
 
 #
 # Aliases
 #
 
-# hammerspoon
-alias ham='(cd ~hammerspoon && e)'
-
-# ai
-alias ask='sgpt'
-alias hal='interpreter'
-alias to-ai='mods chat'
-
-# tmux
-alias tmuxcd='cd ~tmux'
-alias tmuxe='(cd ~tmux && e tmux.conf)'
-
-# wezterm
-alias weze='(cd ~wez && e)'
-alias wez='wezterm'
-
-# ssh
-alias sshe='(cd ~/.ssh && e config)'
-
-# vim
-alias nvimcd='cd ~nvim'
-alias nvime='(nvimcd && e)'
-alias E='${(z)EDITOR}'
-
-# hcp
-alias tf='terraform'
-alias tg='terragrunt'
-alias pkr='packer'
-
-# git
-alias gcem='git commit -m "ci: empty commit" --allow-empty && git pull && git push'
-alias gfap='git fetch --all --prune'
-
-# just
-alias j='just --command-color cyan'
-alias jc='j --choose'
-alias jl='j --list'
-
 # spotify
-alias spt='spotify_player'
+alias sp='spotify_player'
 
 # etc
 alias flushdns='sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder'
@@ -84,51 +47,8 @@ alias hosts='sudo $EDITOR /etc/hosts && flushdns'
 alias reload='exec zsh && source $ZDOTDIR/.zshenv'
 alias recomp='rm -rf ~/.zcompdump && compinit'
 alias aliases="e ${0:a} && reload"
-alias zshcd='cd ~zsh'
-alias zshe='(cd ~zsh && e) && reload'
-alias prezto='(cd ~prezto && e) && reload'
-for rcfile in ~prezto/runcoms/^README.md; do
-  alias "${rcfile:t}"="(cd ~prezto && e $rcfile) && reload"
-done
-alias zmodedit='find ~prezto/{custom,modules} -type d -maxdepth 1 | fzf | xargs -I _ zsh -lc "cd _ && nvim"; exec zsh'
-alias "${ZPREZTODIR:t}e"='(cd ~prezto && e .) && reload'
-alias "${ZPREZTODIR:t}cd"='cd ~prezto'
-alias zsecrets='(cd $HOME && e .zsecrets)'
 
-# exercism
-alias exm="exercism"
-
-# ansible
-alias ans='ansible'
-alias ansp='ansible-playbook'
-alias ansv='ansible-vault'
-alias ansc='ansible-console'
-alias ansi='ansible-inventory'
-
-# pnpm
-alias px='pnpm exec'
-
-# emacs
-alias en='e --no-wait'
-alias org='en --eval '"'"'(org-capture)'"'"
-
-# karabiner
-alias kara='(cd ~karabiner && e)'
-
-# {time,task}warrior
-alias t='task'
-alias ts='tasksh'
-alias tt='taskwarrior-tui'
-alias tw='timew'
-alias twr='timew summary'
-alias tws='timew start'
-alias twS='timew stop'
-alias twx='timew cancel'
-alias twX='timew delete'
-alias twt='timew track'
-alias twa='timew annotate'
-alias twc='timew continue'
-alias twd='timew day'
-alias tww='timew week'
-alias twe='timew export | ijq'
-alias twE='timew export | jq'
+# ls
+if (( $+commands[lla] )); then
+  alias ls="lla"
+fi
