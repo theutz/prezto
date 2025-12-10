@@ -12,24 +12,13 @@ fi
 
 # Customize to your needs...
 
+[[ -x $HOME/.local/bin/mise ]] && eval "$($HOME/.local/bin/mise activate zsh)"
+
 #
 # Aliases
 #
 
 [[ -s "$ZDOTDIR"/.zaliases ]] && source "$ZDOTDIR"/.zaliases
-
-#
-# asdf
-#
-
-if command -v asdf > /dev/null; then
-  if [[ "$OSTYPE" == darwin* ]]; then
-    source "$(brew --prefix asdf)/libexec/asdf.sh"
-    fpath=(${ASDF_DIR}/completions $fpath)
-  else
-    source "$HOME/.asdf/asdf"
-  fi
-fi
 
 #
 # fuck
