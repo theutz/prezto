@@ -55,6 +55,7 @@ prezto_modules=(
   gpg
 	command-not-found
 	tmux
+  lla
   tmuxp
   docker
 	git
