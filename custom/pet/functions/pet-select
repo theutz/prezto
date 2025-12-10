@@ -1,0 +1,3 @@
+BUFFER=$(pet search --query "$LBUFFER")
+CURSOR=$#BUFFER
+zle redisplay

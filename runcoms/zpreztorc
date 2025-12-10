@@ -47,11 +47,12 @@ prezto_modules=(
 	gnu-utility
 	utility
 
+  mise
+  walk
 	homebrew
 	osx
   ssh
   gpg
-  lf
 	command-not-found
 	tmux
   tmuxp
@@ -61,11 +62,11 @@ prezto_modules=(
 	archive
   zellij
   php
-  nb
 	rsync
-	python
-  go
-  linode
+  thefuck
+	# python
+  # go
+  # linode
 
 	completion
 
@@ -73,13 +74,14 @@ prezto_modules=(
   fzf
   chezmoi
   pet
-  rust
+  walk
   neovim
 	syntax-highlighting
 	history-substring-search
 	autosuggestions
   widgets
-	prompt
+	# prompt
+  starship
 )
 zstyle ':prezto:load' pmodule "$prezto_modules[@]"
 unset prezto_modules

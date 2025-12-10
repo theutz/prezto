@@ -1,6 +1,5 @@
-if ! (( $+commands[zoxide] )); then
+! command -v zoxide &>/dev/null &&
   return 1
-fi
 
 # Load zoxide
 eval "$(zoxide init zsh)"
@@ -8,8 +7,6 @@ eval "$(zoxide init zsh)"
 if zstyle -t ':prezto:module:zoxide:alias-cd' enable; then
   alias cd='z'
 fi
-
-alias cdi="zi"
 
 if zstyle -T ':prezto:module:zoxide:widget' enable; then
   zle -N zoxide-interactive

@@ -91,32 +91,6 @@ fi
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 
 #
-# Ansible
-#
-export ANSIBLE_HOME="$XDG_DATA_HOME/ansible"
-
-#
 # MySQL
 #
 export MYSQL_HISTFILE="$XDG_DATA_HOME"/mysql_history
-
-#
-# nb
-#
-export NB_DIR="$XDG_DATA_HOME/nb"
-export NBRC_PATH="$XDG_CONFIG_HOME"/nbrc
-
-#
-# Rust
-#
-export CARGO_HOME="$XDG_DATA_HOME/cargo"
-[[ -s "$CARGO_HOME/env" ]] && . "$CARGO_HOME/env"
-
-#
-# skim
-#
-export SKIM_DEFAULT_OPTIONS="--bind='ctrl-a:toggle-all'"
-
-if [[ -f "$HOME"/.zsecrets ]]; then
-  source "$HOME"/.zsecrets
-fi
