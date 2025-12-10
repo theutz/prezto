@@ -68,6 +68,7 @@ path=(
 
 fpath=(
   /opt/homebrew/share/zsh/site-functions
+  $XDG_DATA_HOME/zsh/site-functions
   $fpath
 )
 
