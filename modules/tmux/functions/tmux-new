@@ -1,0 +1,23 @@
+# vim:ft=zsh
+
+local session_name="$1"
+shift
+
+local window_name="${1:-main}"
+if [[ "$window_name" != "main" ]]; then
+  shift
+fi
+
+cmd=(
+  tmux
+  new
+  -d
+  -s $session_name
+  -n $window_name
+  $@
+)
+
+echo "\033[1;30;42m RUNNING \033[0m $cmd"
+echo -n "\033[35m"
+
+$cmd
